@@ -1,0 +1,30 @@
+<p><b>Choose from the following options:</b></p>
+<p>500 Guaranteed Visits - Only $4.99 - That's $0.01 per visit!</p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="webmaster@iphat.net">
+<input type="hidden" name="undefined_quantity" value="1">
+<input type="hidden" name="image_url" value="https://www.websitesecured.com/~iphat/logo-iphat-paypal.gif">
+<input type="hidden" name="item_name" value="500 Guaranteed Visits for: ~userid~">
+<input type="hidden" name="item_number" value="~userid~">
+<input type="hidden" name="amount" value="4.99">
+<input type="hidden" name="return" value="http://ww3.iphatscripts.com/ty-gclicks.html">
+<input type="hidden" name="cancel_return" value="http://ww3.iphatscripts.com/">
+<p>Thru PayPal.com<br><input type="image" src="http://images.paypal.com/images/x-click-but01.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!"></p>
+</form>
+<form action="https://www.e-gold.com/sci_asp/payments.asp" method="POST">
+<input type="hidden" name="PAYEE_ACCOUNT" value="334882">
+<input type="hidden" name="PAYEE_NAME" value="IphatScripts.com">
+<input type="hidden" name="PAYMENT_AMOUNT" value="4.99">
+<input type="hidden" name="PAYMENT_UNITS" value="1">
+<input type="hidden" name="PAYMENT_METAL_ID" value="1">
+<input type="hidden" name="STATUS_URL" value="mailto:webmaster@iphat.net">
+<input type="hidden" name="NOPAYMENT_URL" value="http://ww3.iphatscripts.com/">
+<input type="hidden" name="NOPAYMENT_URL_METHOD" value="LINK">
+<input type="hidden" name="PAYMENT_URL" value="http://ww3.iphatscripts.com/ty-gclicks.html">
+<input type="hidden" name="PAYMENT_URL_METHOD" value="LINK">
+<input type="hidden" name="BAGGAGE_FIELDS" value="CUSTOMERID">
+<input type="hidden" name="CUSTOMERID" value="0">
+<input type="hidden" name="SUGGESTED_MEMO" value='500 Guaranteed Visits for: ~userid~'>
+<p>Thru E-Gold.com<br><input type="submit" name="PAYMENT_METHOD" value=" Purchase Now " class="form-button"></p>
+</form>
