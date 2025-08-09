@@ -1,0 +1,147 @@
+#########################################################
+#                   Survey Wizard                       #
+#########################################################
+#                                                       #
+#                                                       #
+# This script was created by:                           #
+#                                                       #
+# PHPSelect Web Development Division.                   #
+# http://www.phpselect.com/                             #
+#                                                       #
+# This script and all included modules, lists or        #
+# images, documentation are copyright 2002              #
+# PHPSelect (http://www.phpselect.com/) unless          #
+# otherwise stated in the script.                       #
+#                                                       #
+# Purchasers are granted rights to use this script      #
+# on any site they own. There is no individual site     #
+# license needed per site.                              #
+#                                                       #
+# Any copying, distribution, modification with          #
+# intent to distribute as new code will result          #
+# in immediate loss of your rights to use this          #
+# program as well as possible legal action.             #
+#                                                       #
+# This and many other fine scripts are available at     #
+# the above website or by emailing the authors at       #
+# admin@phpselect.com or info@phpselect.com             #
+#                                                       #
+#########################################################
+
+[Overview]
+
+Survey Wizard allows you to create surveys for your site
+and have your visitors fill them out. You can add an 
+unlimited number of surveys, each with an unlimited 
+number of questions. For each question, you specify how
+the answers should be presented to the user: a select list,
+radio buttons, check boxes, or a text input field. Each
+question can have up to 10 predefined answer choices.
+
+#########################################################
+
+[Features]
+
++100% templates to fit into your own site design
++Simple and quick to set up
++Survey your users for fun or for research
++Supports an unlimited number of surveys
++Each survey can have an unlimited number of questions
++Admin script for easy survey creation and results viewing
++Optionally allow users to view survey results
+
+#########################################################
+
+Installation instructions for Survey Wizard
+
+Inside the zip you should find the following files :
+
+	INSTALL.txt      - Installation instructions
+	admin.php        - the administrative script
+	config.php 	 - the configuration variables
+        install.php      - database installer script
+        survey.php       - the survey-taking script
+        templates/       - template files
+
+Unzip the file and edit the files inside the templates
+directory to suit your needs. The only templates which
+will be seen by the public are listall.html, thankyou.html,
+view-main.html, view-question.html, and view-results.html.
+We suggest leaving the table in the view-question.html 
+template at its current width or wider, in order to leave
+room for the question text and possible answers. If you
+do not plan on allowing visitors to view survey results,
+you should also edit thankyou.html and remove the "view
+results" link code.
+
+Be sure to leave the output tokens (variable names inside
+of percent signs, such as %numquestions%) in the files 
+where you want the corresponding output to appear. The
+%sid% and %qids% tokens MUST remain inside of the 
+view-main.html template.
+
+Of course, you do not have to edit ANY of the templates if
+you don't want to. Survey Wizard will work just fine with
+the defaults.
+
+Edit the config.php file to reflect your MySQL settings, 
+specify whether or not visitors should be allowed to view
+survey results, and set the URL to the "bar" image to use
+when viewing survey results. An image named gradient.gif is
+inside the templates directory and we suggest using this as
+the "bar" image.
+
+Now upload all of the files to your web server. Everything
+except for gradient.gif should be uploaded in ASCII mode,
+the GIF should be uploaded in Binary mode.
+
+Access the installer.php file in your web browser. The
+installer script assumes that the database specified in
+config.php already exists, so if it doesn't, you should
+create it or have your server admin create it. When you
+run the installer.php script, it will create the tables
+inside of the database.
+
+#########################################################
+
+[Usage]
+
+When installation is finished, access the admin.php 
+script in your browser. Click the "Create New Survey"
+button. The survey creation procedure is straightforward.
+You enter a name for the survey, for example "Internet
+Usage Survey," then proceed to add questions. When you
+finish adding questions be sure to click the "Save and
+Finalize Survey" button instead of "Save and Add Another
+Question."
+
+After you create a survey, it's ready for the public to
+use. There are two ways to link visitors to your survey.
+You can create a link to survey.php, which will list all
+active surveys in the database. Or, you can link directly
+to a particular survey by linking to survey.php?sid=#
+where the # is the survey ID number you want to link to.
+(If you forget a survey's ID number, load the admin.php
+menu. Survey ID numbers are displayed before their names
+in the select lists.)
+
+For example, to link to your first survey, you would 
+create a link to http://yoursite.com/survey.php?sid=1
+
+Through the admin.php menu, you can also view survey
+results and disable a survey. When a survey is disabled,
+it will no longer display in the list of active surveys
+that the public sees, and the public will not be able
+to take that survey even if they link directly to it by
+its ID number. You can continue to view a survey's
+results forever even after it's been disabled.
+
+#########################################################
+
+[Support]
+
+You can reach technical support at support@phpselect.com.
+You can also visit us at http://www.phpselect.com/ for more
+information regarding this and other scripts.
+
+Thanks!
