@@ -1,0 +1,8 @@
+<p><b>Welcome to iSafeList v3</b><br>The Most Powerfull Safelist Scripts Page Available</p>
+
+<p>The first thing to do is login to your <a href="~admincgi~/index.cgi" target="_blank">administrative section</a> and edit this your main page of the members section.</p>
+
+<p>After that all you have to really do is start promoting it as much as you can! :-)</p>
+
+<p>Enjoy, and we wish you great success in your new business venture.</p>
+
