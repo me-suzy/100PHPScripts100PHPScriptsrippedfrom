@@ -1,0 +1,84 @@
+#########################################################
+#                   RandomImage                         #
+#########################################################
+#                                                       #
+#                                                       #
+# This script was created by:                           #
+#                                                       #
+# PHPSelect Web Development Division.                   #
+# http://www.phpselect.com/                             #
+#                                                       #
+# This script and all included modules, lists or        #
+# images, documentation are copyright 2002              #
+# PHPSelect (http://www.phpselect.com/) unless          #
+# otherwise stated in the script.                       #
+#                                                       #
+# Purchasers are granted rights to use this script      #
+# on any site they own. There is no individual site     #
+# license needed per site.                              #
+#                                                       #
+# Any copying, distribution, modification with          #
+# intent to distribute as new code will result          #
+# in immediate loss of your rights to use this          #
+# program as well as possible legal action.             #
+#                                                       #
+# This and many other fine scripts are available at     #
+# the above website or by emailing the authors at       #
+# admin@phpselect.com or info@phpselect.com             #
+#                                                       #
+#########################################################
+
+[Overview]
+
+RandomImage is a random image displayer. It supports 4 
+graphics types, .bmp, .png, .gif, and .jpg. It finds a 
+random image from your images directory and then 
+displays the picture. All automatically! 
+
+#########################################################
+
+[Features]
+
++Display random images on your site
++Entertaining for visitors
++Makes people refer others to your site
+
+#########################################################
+
+Installation instructions for RandomImage
+
+Inside the zip you should find the following files :
+
+	INSTALL.txt      - Installation instructions
+	randomimage.php	 - the main PHP script
+	images/ 	 - sample image directory
+
+Unzip the file and set the $imagedir variable inside of
+the randomimage.php file to reflect the directory which
+contains your images. 
+
+Upload the script to your web server in ASCII mode. 
+
+#########################################################
+
+[Usage]
+
+To use RandomImage, place the following statement into any
+PHP file on your site where you want a random image to
+appear:
+
+  <?php include("/path/to/randomimage.php") ?>
+
+If your existing site is in pure HTML instead of PHP, 
+that's OK! Just rename the pages from .html to .php, 
+otherwise the include statements will not be processed.
+
+#########################################################
+
+[Support]
+
+You can reach technical support at support@phpselect.com.
+You can also visit us at http://www.phpselect.com/ for more
+information regarding this and other scripts.
+
+Thanks!
