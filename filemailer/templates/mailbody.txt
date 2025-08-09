@@ -1,0 +1,10 @@
+Hello %%NAME%%, 
+
+Here is your requested copy of %%FILENAME%%
+
+If you have any questions about this file, please contact us
+at staff@example.com. Enjoy the file!
+
+Thanks,
+
+Example Signature
