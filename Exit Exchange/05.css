@@ -1,0 +1,9 @@
+
+a:visited { color: #ffffff; text-decoration: none }
+a:link { color: #ffffff; text-decoration: none }
+a:hover { color: #ffffff; text-decoration: underline overline }
+a:active { color: #ffffff; text-decoration: none }
+font { color: #e6e6e6 }
+td {color: #e6e6e6 }
+BODY { scrollbar-3dlight-color: #c6c6c6; scrollbar-arrow-color: #000000; scrollbar-darkshadow-color: #6e6e6e; scrollbar-face-color: #c6c6c6; scrollbar-shadow-color: #6e6e6e; scrollbar-track-color: #6e6e6e }
+INPUT, SELECT, TEXTAREA { color: #000000; background-color: #e6e6e6; border: solid 1px #000000 }
