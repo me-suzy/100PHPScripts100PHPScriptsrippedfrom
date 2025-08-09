@@ -1,0 +1,34 @@
+To upgrade to this iFFA v3 from the v2 just follow the instructions below:
+
+1) In the 'cgi-bin' folder find the file called 'user-list.inc' file and edit
+it thru your favorite text editor to show the FULL Path to the Data Folder for
+your iFFA v2 Installation on your server in the '$datadir' line.
+
+2) Upload every single file in the 'cgi-bin' folder into the 'cgi-bin' folder
+on your iFFA v2 Installation you're upgrading.
+
+3) Once done, make sure to go and CHMOD the user-list.inc, convert.cgi,
+cron_sending_leads.cgi, and wwp_post.cgi files to 755.
+
+4) Open your original 'config.pm' file from your working installation data
+folder in a text editor, and open the one in the v3 package on a separate window
+of a text editor as well.
+
+Now transfer all the variables information that are required on both from the
+old one to the new one, and fill in the ones in the new one that aren't in the
+old one.
+
+5) Now from the 'ffa_data' folder upload the new 'config.pm' file, and the
+'leadslistmessages.pm' file into the data folder of the installation you're
+upgrading, and remember to CHMOD both to 777.
+
+6) Run the convert.cgi from your web browser, and enter the Full Path to your
+Data Directory when asked for.
+
+
+You're done with the upgrade to iFFA v3.
+
+
+
+Admin
+http://IphatScripts.com/
