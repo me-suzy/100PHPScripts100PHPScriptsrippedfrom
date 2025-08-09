@@ -1,0 +1,441 @@
+<HTML><head><title>AutoMail - Automated Serial Mailing Manager</title>
+<meta name="keywords" content="AutoMail mlm network marketing email contact leads prospects automated mailing series">
+<meta name="description" content="AutoMail is a lead/prospect 
+  mailing manager, built with MLMers and network marketers in mind. AutoMail allows 
+  you to keep your company or product fresh in your prospects' minds by sending 
+  them a series of email messages over time.">
+<body bgcolor="#FFFFFF" text="#000000">
+<h2><font face="Verdana, Arial, Helvetica, sans-serif">AutoMail - Documentation</font> 
+</h2>
+<hr>
+<p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Welcome 
+  to the manual for AutoMail. This documentation is divided into several parts:</font></p>
+<ul>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="#install">Installing 
+AutoMail</a></font></li>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="#variables">Variables/Configuring</a> 
+- Detailed Information</font></li>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="#using">Using 
+AutoMail</a></font></li>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="#auto">Autoresponder 
+Setup</a> (advanced users only)</font></li>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="#tech">Tech 
+Notes</a></font></li>
+</ul>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b><a name="install"></a>Installing 
+AutoMail</b>:</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">AutoMail is fairly 
+simple to install. First, you need to make sure that your web server meets the 
+following requirements: support for PHP4.2 or newer, access to a MySQL server, 
+access to sendmail, and the ability to run CGI scripts. If you're not sure whether 
+or not your server meets these requirements, you should ask the person who owns 
+or operates it. </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Assuming your server 
+meets the requirements for AutoMail, you're ready to go. Unzip the AutoMail.zip 
+file that you downloaded. Inside you'll find the following files:</font></p>
+<ul>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>autoresponder.php 
+</b>- see <a href="#auto">Autoresponder Setup</a> - advanced users only</font></li>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>common.php</b> 
+- contains functions and variables used by multiple scripts</font></li>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>config.php</b> 
+- variables you must set before running AutoMail</font></li>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>foot.php</b> 
+- footer information appended to the output of some pages</font></li>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>index.php</b> 
+- the main AutoMail program itself</font></li>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>install.php</b> 
+- installation script</font></li>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>license.txt</b> 
+- the AutoMail license agreement</font></li>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>messages.php</b> 
+- handles editing of your email messages</font></li>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>options.php</b> 
+- handles setting of AutoMail's preferences</font></li>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>process.php</b> 
+- handles the sending of daily messages</font></li>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>sample-subscribe-form.php</b> 
+- example user self-subscribe form</font></li>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>user.php</b> 
+- handles user functions (subscribe, confirm, remove)</font></li>
+</ul>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">The first thing 
+you'll need to do is open up the config.php script. You should open it up in a 
+plaintext editor, like Notepad or SimpleText. Set all of the variables to the 
+values you'd like to use. If you need some help with this, check the <a href="#variables">Variables</a> 
+section of the manual below.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Once you configure 
+the variables in config.php, </font><font face="Verdana, Arial, Helvetica, sans-serif" size="2">upload 
+all of the files in ASCII mode to a directory on your web server. I recommend 
+creating a new directory called &quot;AutoMail&quot; in your document root. Now 
+access the install.php file in your web browser. For example, if you uploaded 
+the files into the &quot;AutoMail&quot; directory on your server, you would load 
+http://example.com/AutoMail/install.php in your web browser. The installation 
+script will alert you to its progress (the entire installation takes less than 
+a second on a fast web server). It will also give you hints if it encounters any 
+errors. </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">If you made it 
+this far, AutoMail is totally installed. The first thing you should do is visit 
+the Options/Setup area to set your preferences. Go to the <a href="#using">Using 
+AutoMail</a> section to see how.</font></p>
+<hr>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b><a name="variables"></a>Variables/Configuration</b></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">This section of 
+the manual deals with the variables you need to configure before using AutoMail. 
+If you're having problems or you don't know what values to use, hopefully you'll 
+find some help here. The variables in config.php are listed below, along with 
+explanations. When editing the variables, make sure that you keep the proper formatting 
+(quotation marks, semicolons, etc) intact.</font></p>
+<blockquote> 
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>$sqlhost</b> 
+should be set to the server name or IP address of the host that runs your MySQL 
+server. In most cases, setting this variable to &quot;localhost&quot; is the best 
+idea.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>$sqluser</b> 
+must be set to the username you use to access your MySQL server. If you own your 
+own server, you should know this; otherwise you may need to contact your web host's 
+technical support to determine the SQL username.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>$sqlpass</b> 
+must be set to the password you use to access your MySQL server. If you own your 
+own server, you should know this; otherwise you may need to contact your web host's 
+technical support to determine the SQL password.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>$sqldbname</b> 
+must be set to the database name you want to use for AutoMail on the MySQL server. 
+If you do not own your server, you may be required to use a pre-determined database 
+name (contact your web host's technical support to find out).</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>$sqltype </b>must 
+be set to &quot;mysql&quot; as this is the only supported value. If you change 
+it to something else, AutoMail will not work. Support for other SQL database types 
+(pgsql...) may be added in a future version.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>$version</b> 
+is the eight-digit version/revision number for your copy of AutoMail. It corresponds 
+to the date that your copy was released to the public. You should not change this 
+number. </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>$checkvers</b> 
+determines whether or not AutoMail will automatically check for updates when you 
+run the script. This feature is disabled by default, because it causes an off-site 
+URL to be accessed and can slow down performance. To enable this feature, set 
+this variable to have a value of 1 instead of 0.</font></p>
+</blockquote>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">In addition to 
+the required configuration variables in config.php, AutoMail offers several options 
+which are stored on the database. These preferences can be accessed using the 
+&quot;Options/Setup&quot; button on AutoMail's index page. The options are explained 
+in detail on that page, and also below:</font></p>
+<blockquote> 
+<p><font face="Verdana, Arial" size="2"><b>Return address</b>: All mail that AutoMail 
+sends will use this email address as the &quot;From&quot; address. You must set 
+this to a valid email address that you control.<br>
+</font></p>
+<p><font size="2" face="Verdana, Arial"><b>Notify</b>: When set to &quot;Yes,&quot; 
+you will be notified via email (to the address specified above) when someone adds 
+himself to or removes himself from the mailing list. <br>
+</font></p>
+<p><font size="2" face="Verdana, Arial"><b>List Name</b>: The name you want AutoMail 
+to use when it refers to your list in email messages. This happens in two places: 
+confirmation messages sent to recipients who sign themselves up, and at the bottom 
+of each email AutoMail sends.<br>
+</font></p>
+<p><font size="2" face="Verdana, Arial"><b>Delay</b>: The delay, in days, between 
+each message sent to a recipient. For example, if you want your recipients to 
+receive one message per week, set Delay to 7.</font></p>
+<p><font size="2" face="Verdana, Arial"><b>Main URL</b>: In order to generate 
+some internal links, AutoMail needs to know where it's installed. You should set 
+Main URL to the internet address of AutoMail's index.php file, e.g. http://example.com/AutoMail/index.php<br>
+</font></p>
+<p><font size="2" face="Verdana, Arial"><b>User URL</b>: Specify the URL to AutoMail's 
+user.php file here. AutoMail uses this URL to generate confirmation and unsubscribe 
+links in email messages.</font></p>
+<p><font size="2" face="Verdana, Arial"><b>Signup Success URL</b>: When a user 
+is successful at signing himself up for the list, AutoMail will print out a default 
+message to indicate the success. If you'd rather have the user get redirected 
+to a custom page (to match your site layout, etc.) instead of seeing the default 
+message, you can specify the URL here.<br>
+</font></p>
+<p><font size="2" face="Verdana, Arial"><b>Signup Failure URL</b>: When a user 
+is NOT successful at signing himself up for the list, AutoMail will print out 
+a default message to indicate the failure. If you'd rather have the user get redirected 
+to a custom page (to match your site layout, etc.) instead of seeing the default 
+message, you can specify the URL here.<br>
+</font></p>
+<p><font size="2" face="Verdana, Arial"><b>Unsubscribe Success URL</b>: When a 
+user is successful at removing himself from the list, AutoMail will print out 
+a default message to indicate the success. If you'd rather have the user get redirected 
+to a custom page (to match your site layout, etc.) instead of seeing the default 
+message, you can specify the URL here.<br>
+</font></p>
+<p><font size="2" face="Verdana, Arial"><b>Unsubscribe Failure URL</b>: When a 
+user is NOT successful at removing himself from for the list, AutoMail will print 
+out a default message to indicate the failure. If you'd rather have the user get 
+redirected to a custom page (to match your site layout, etc.) instead of seeing 
+the default message, you can specify the URL here.<br>
+</font></p>
+<p><font size="2" face="Verdana, Arial"><b>Confirm Success URL</b>: When a user 
+is successful at confirming his subscription the list, AutoMail will print out 
+a default message to indicate the success. If you'd rather have the user get redirected 
+to a custom page (to match your site layout, etc.) instead of seeing the default 
+message, you can specify the URL here.<br>
+</font></p>
+<p><font size="2" face="Verdana, Arial"><b>Confirm Failure URL</b>: When a user 
+is NOT successful at confirming his subscription to the list, AutoMail will print 
+out a default message to indicate the success. If you'd rather have the user get 
+redirected to a custom page (to match your site layout, etc.) instead of seeing 
+the default message, you can specify the URL here.<br>
+</font></p>
+<p><font size="2" face="Verdana, Arial"><b>Headers</b>: You can specify extra 
+mail headers to be included in outgoing email messages (max 255 characters). Place 
+one header per line. Extra headers are completely optional; most users will not 
+have a need for this setting. </font></p>
+</blockquote>
+<hr>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b><a name="using"></a>Using 
+AutoMail</b></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Using AutoMail 
+  is pretty simple. All you have to do is visit the URL to your installed copy. 
+  For example, if AutoMail is installed at http://www.example.com/AutoMail/, 
+  just visit that URL. The main menu will appear and use of the program is straightforward. 
+  </font></p>
+<blockquote> 
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Adding a Recipient</b></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">When you want to 
+add a new recipient, starting the mailing process is simple. Just run AutoMail, 
+enter the recipient's name and email address, and click the &quot;Add New Recipient&quot; 
+button. The user will be added to your database and the first message in your 
+series will be mailed to them automatically. Note that there is no confirmation 
+process for recipients that you add yourself. You, as the list administrator, 
+are trusted to only add people who have requested to receive your mail.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Removing a Recipient</b></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">If you want, you 
+can manually remove someone from the mailing list. Just enter their email address 
+and click the &quot;Remove Recipient&quot; button. Their email address will be 
+removed from the database and they won't get any more mail from you. Normally 
+you won't need to do this, because your recipients can remove themselves with 
+a simple click.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Processing Messages</b></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Every day you should 
+run AutoMail and click the &quot;Process Today's Mail&quot; button one time. When 
+you do this, AutoMail will automatically send out all emails which need to be 
+sent, and update each recipient's database entry. If you accidentally miss a day, 
+that's OK, your recipients will just get their next message a day later than scheduled. 
+AutoMail handles expiration by itself; when someone has received your entire series 
+of messages, their database record will be updated so that they no longer receive 
+mail.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You can automate 
+this process, and it's suggested that you do so if possible. On a unix-based server, 
+simply add a cron job to load AutoMail's &quot;process.php&quot; file (via lynx, 
+wget, etc) once each day. </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Editing Messages</b></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">The messages you 
+define are, of course, the core of AutoMail. AutoMail works by sending those messages 
+over an incremental period. To edit your messages, click the &quot;Edit Messages&quot; 
+button on AutoMail's main form. You'll be taken to the message list, which displays 
+the subjects of your existing messages and provides the capability to edit them 
+or add a new message. Messages are sent in the order that they appear in this 
+list.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">AutoMail comes 
+with two sample messages. You can delete these messages and add your own, or you 
+can simply edit the samples to fit your own needs. To complete either task, click 
+the &quot;Edit&quot; button next to a message's subject in the list. This will 
+invoke the message editor view, which allows you to edit or delete a message.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">To add a new message, 
+click the &quot;Add Message&quot; button on the message list display. </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">When editing messages, 
+there's a special keyword you can use to make a recipient's name appear in the 
+email. This lets you personalize your messages so that they appear to have been 
+sent individually to each recipient. Use the eight-character identifier %%NAME%% 
+wherever you want the recipient's name to show up. If the recipient's name is 
+unknown - this can happen if they don't provide it when they subscribe, or if 
+they subscribe via email to your autoresponder - AutoMail will insert their email 
+address instead. You can use the %%NAME%% keyword in either the message body or 
+the subject line.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Recipient Functions</b></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">The two most important 
+recipient functions - adding and removing - are available on AutoMail's main page. 
+Three more functions have been provided for convenience and they can be accessed 
+by clicking the &quot;Recipients&quot; button on the main page.</font></p>
+<blockquote> 
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Lookup User 
+Details</b>: If you enter an email address and click the &quot;Lookup User Details&quot; 
+button, you'll receive itemized information about that recipient. A sample record 
+detail is below:</font></p>
+</blockquote>
+<table width="80%" border="0" cellspacing="0" cellpadding="0" align="center">
+<tr> 
+<td width="50%"> 
+<div align="right"><font size="2" face="Verdana, Arial">Recipient Name: &nbsp;&nbsp;&nbsp;</font></div>
+</td>
+<td> 
+<div align="left"><font size="2" face="Verdana, Arial">shaun@shat.net</font></div>
+</td>
+</tr>
+<tr> 
+<td> 
+<div align="right"><font size="2" face="Verdana, Arial">Email Address: &nbsp;&nbsp;&nbsp;</font></div>
+</td>
+<td> 
+<div align="left"><font size="2" face="Verdana, Arial">shaun@shat.net</font></div>
+</td>
+</tr>
+<tr> 
+<td> 
+<div align="right"><font size="2" face="Verdana, Arial">Messages Received: &nbsp;&nbsp;&nbsp;</font></div>
+</td>
+<td> 
+<div align="left"><font size="2" face="Verdana, Arial">2</font></div>
+</td>
+</tr>
+<tr> 
+<td> 
+<div align="right"><font size="2" face="Verdana, Arial">Date Added: &nbsp;&nbsp;&nbsp;</font></div>
+</td>
+<td> 
+<div align="left"><font size="2" face="Verdana, Arial">2002-08-07 01:06:38</font></div>
+</td>
+</tr>
+<tr> 
+<td> 
+<div align="right"><font size="2" face="Verdana, Arial">Last Message Received: 
+&nbsp;&nbsp;&nbsp; </font></div>
+</td>
+<td> 
+<div align="left"><font size="2" face="Verdana, Arial">2002-08-08 04:14:21</font></div>
+</td>
+</tr>
+<tr> 
+<td> 
+<div align="right"><font size="2" face="Verdana, Arial">Added By: &nbsp;&nbsp;&nbsp;</font></div>
+</td>
+<td> 
+<div align="left"><font size="2" face="Verdana, Arial">User subscribed himself</font></div>
+</td>
+</tr>
+<tr> 
+<td> 
+<div align="right"><font size="2" face="Verdana, Arial">Confirmation Info: &nbsp;&nbsp;&nbsp;</font></div>
+</td>
+<td> 
+<div align="left"><font size="2" face="Verdana, Arial">Confirmation key: f16717730a20913b1476f4729aff65b7<br>
+Confirmed on: 2002-08-07 01:07:31<br>
+Confirmed by IP: 192.168.1.25</font></div>
+</td>
+</tr>
+</table>
+<blockquote> 
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Note that in the 
+case of users who subscribed themselves, this information includes the date and 
+time that they confirmed their subscription, as well as the IP address they were 
+using when they did so. This information can be valuable if one of your recipients 
+signs up, forgets they subscribed, and later accuses you of spamming. Note that 
+confirmation details are not available for recipients that you (the administrator) 
+manually added to the list.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>List Active 
+Recipients</b>: Displays a list of all users who are currently active in the database. 
+These are users who are on the list and have not yet received all the messages 
+in your series.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>List All Recipients</b>: 
+Displays a list of both active users <i>and</i> users who have received all of 
+the messages in your series. This does not include recipients that you removed 
+via the &quot;Remove Recipient&quot; button on AutoMail's main page, or recipients 
+who have unsubscribed themselves from the list; users in both categories are permanently 
+deleted from the database.</font></p>
+</blockquote>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Letting Users 
+Subscribe Themselves</b></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Instead of manually 
+adding new recipients to your list, you can allow visitors to your site to sign 
+themselves up. All you need to do is create a form with a method of POST and an 
+action of your installed copy of AutoMail's user.php. Your form must contain two 
+fields, &quot;name&quot; and &quot;email.&quot; See sample-subscribe-form.html, 
+included with AutoMail, for an example.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You can also integrate 
+subscription into your own existing signup form (for example, your site registration 
+form). To do so, have your form access your installed copy of AutoMail's user.php, 
+specifying the &quot;name&quot; and &quot;email&quot; values. For example, if 
+someone signs up for your site with the name Bob and the email address bob@example.com, 
+your registration script would need to access:</font></p>
+<blockquote>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">http://example.com/path/to/AutoMail/user.php?name=Bob&amp;email=bob@example.com</font></p>
+</blockquote>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">The method you 
+use to access this URL depends on the language in which your existing form is 
+written. You should not display the output from this URL.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Letting Users 
+Unsubscribe Themselves</b></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Every message sent 
+out by AutoMail includes an unsubscription link. In order to ensure that the unsubscribe 
+option is available to your recipients, you must set the &quot;User URL&quot; 
+on AutoMail's Options/Setup page to an accurate value.</font></p>
+</blockquote>
+<hr>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b><a name="auto"></a>Autoresponder 
+Setup </b></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">AutoMail comes 
+with limited autoresponder support, allowing recipients to sign themselves up 
+by sending an email (with any contents) to a specified address, as opposed to 
+posting a form on your website. This functionality is contained within the autoresponder.php 
+file, and is recommended for advanced users only - users who are not familiar 
+with unix should stick to AutoMail's web-based features. The autoresponder capability 
+has some additional requirements above and beyond the rest of AutoMail:</font></p>
+<ul>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You must have 
+root access on your server.</font></li>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You must have 
+the PHP binary installed (in addition to the Apache module). Issue the command 
+&quot;php -v&quot; at a shell to determine whether or not the binary exists on 
+your system.</font></li>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You must be able 
+to set up a mail alias so that incoming email to your autoresponder address is 
+piped to a script instead of being delivered to a mailbox. Sendmail typically 
+supports this behavior by default.</font></li>
+</ul>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">To set up the autoresponder, 
+you'll first need to edit autoresponder.php. Change the first line of the script 
+to reflect the location of the PHP binary on your server. If you're unsure, issue 
+the command &quot;which php&quot; or &quot;whereis php&quot; to find out. </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Next, choose the 
+email address you'd like your autoresponder to use. This can be any address on 
+your system which is not currently in use; something like &quot;signup&quot; or 
+&quot;auto&quot; will suit the purpose. Edit your mail aliases file to point that 
+alias at your installed copy of AutoMail's autoresponder.php file, and rebuild 
+the alias database if necessary. On a FreeBSD system running sendmail, this can 
+be taken care of with the following commands:</font></p>
+<blockquote>
+<p><font face="Courier New, Courier, mono" size="2"># cd /etc/mail<br>
+# echo &quot;signup: |/path/to/AutoMail/autoresponder.php&quot; &gt;&gt; aliases<br>
+# make</font></p>
+</blockquote>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">On some systems 
+you may also need to run the command</font></p>
+<blockquote>
+<p><font face="Courier New, Courier, mono" size="2"># newaliases</font></p>
+</blockquote>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">If this is successful, 
+anyone who emails signup@yourdomain will receive a subscription confirmation as 
+if they'd subscribed to your list via a web form. This is the only task that the 
+autoresponder script is currently capable of handling. It should be noted that 
+the autoresponder script has not been widely tested is not a supported part of 
+AutoMail. The autoresponder may generate unusual maillog entries or delivery failures. 
+You have been warned :)</font></p>
+<hr>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b><a name="tech"></a>Tech 
+  Notes </b></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Known Limitations</b>: 
+No major limitations at this point.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You really, really 
+should run the AutoMail script and Process Today's Messages once a day. Missing 
+a day is no longer a big deal (in previous versions it would completely throw 
+off the mailing cycle) but you'll appear more professional if your messages arrive 
+when you say they will.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">I recommend running 
+AutoMail via a cron job, if you have access to cron on a unix machine. The following 
+command will both get the job done:</font></p>
+<blockquote>
+  <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">lynx -dump http://path/to/AutoMail/process.php 
+    &gt; /dev/null</font><br>
+  </p>
+</blockquote>
+<hr>
+<div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Copyright 
+  2002 PHPSelect, <a href="http://www.phpselect.com/">http://www.phpselect.com/</a></font></div>
+<font color="#ffffff">
+217</font>
