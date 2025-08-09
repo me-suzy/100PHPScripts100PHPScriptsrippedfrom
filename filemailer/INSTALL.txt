@@ -1,0 +1,127 @@
+#########################################################
+#                     FileMailer                        #
+#########################################################
+#                                                       #
+#                                                       #
+# This script was created by:                           #
+#                                                       #
+# PHPSelect Web Development Division.                   #
+# http://www.phpselect.com/                             #
+#                                                       #
+# This script and all included modules, lists or        #
+# images, documentation are copyright 2002              #
+# PHPSelect (http://www.phpselect.com/) unless          #
+# otherwise stated in the script.                       #
+#                                                       #
+# Purchasers are granted rights to use this script      #
+# on any site they own. There is no individual site     #
+# license needed per site.                              #
+#                                                       #
+# Any copying, distribution, modification with          #
+# intent to distribute as new code will result          #
+# in immediate loss of your rights to use this          #
+# program as well as possible legal action.             #
+#                                                       #
+# This and many other fine scripts are available at     #
+# the above website or by emailing the authors at       #
+# admin@phpselect.com or info@phpselect.com             #
+#                                                       #
+#########################################################
+
+[Overview]
+
+FileMailer lets you require visitors to submit their name
+and email address in order to retrieve a file from your
+site. Upon submitting the information, the file is sent
+to the visitor via email. This is a great way to stop
+leeching and third-party linking of your files, and 
+it also lets you know exactly who's obtaining your
+files! You can use the stored name/email address info
+to build a mailing list or newsletter.
+
+#########################################################
+
+[Features]
+
++100% templates
++Simple and quick to set up
++Prevents leeching and third party linking
++Files are sent via email, not via download
++Visitors must give a valid email address to get a file
++Tracks how many times each file is retreived
++Records the name/email address of each downloader
+
+#########################################################
+
+Installation instructions for FileMailer
+
+Inside the zip you should find the following files :
+
+	INSTALL.txt      - Installation instructions
+	download.php     - the main PHP script
+	stats.php 	 - the stats/emails PHP script
+        files/           - placeholder files directory
+        stats/           - placeholder stats directory
+        templates/       - template files
+
+Unzip the file and edit the files inside the templates
+directory to suit your needs. mailbody.txt is the body
+of outgoing messages, notfound.html is displayed when
+a user tries to retrieve a file that does not exist,
+register.html is the form the visitor must fill out
+in order to get a file, and standard.html is the 
+confirmation message for a successful file delivery.
+
+Be sure to leave the output tokens (%%NAME%%, %%EMAIL%%,
+%%FILENAME%%, %%IPADDR%%) in the templates where you
+want the corresponding values to appear.
+
+Upload download.php, stats.php, and the entire templates
+directory to your web server in ASCII mode. Create a
+directory named "stats" (or upload the empty one included
+with this distribution) in the directory that contains
+download.php. You MUST give PHP permission to write files
+inside the "stats" directory. To do this, chmod 777 the
+directory or chown it to the web server's userid.
+
+Finally, create a directory named "files" (or upload the
+one included with this distribution) in the directory that
+contains download.php. Move all of the files you'd like to
+offer into this directory. 
+
+#########################################################
+
+[Usage]
+
+To use FileMailer, simply link to download.php with a
+filename argument pointing to any file inside the
+"files" directory. For example, if you want to provide
+access to a file called "phpselect.jpg" you'd place that
+file into the "files" directory and then link to:
+
+http://example.com/path/download.php?filename=phpselect.jpg
+
+FileMailer will then display the registration form. As
+soon as you submit the form, the file will be emailed to
+you!
+
+Note that FileMailer will only mail out files that are 
+inside of the "files" directory. If FileMail determines
+that a visitor is trying to retrieve a file from another
+directory, the download will be denied.
+
+To see how many times each file has been downloaded, or
+to generate a list of all the name:email records on 
+file, access the stats.php script in your web browser.
+You can rename the stats.php script for security 
+purposes if you prefer.
+
+#########################################################
+
+[Support]
+
+You can reach technical support at support@phpselect.com.
+You can also visit us at http://www.phpselect.com/ for more
+information regarding this and other scripts.
+
+Thanks!
