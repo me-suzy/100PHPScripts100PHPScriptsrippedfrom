@@ -1,0 +1,82 @@
+iPaidEmail Installation Instructions:
+=====================================
+
+NOTE: Unzip the package to an empty folder of your computer before starting
+the installation.
+
+1. Thru your hosting account's cpanel create the MySQL Database to use for
+your Paid-4-Email program.
+
+2. Still thru your hosting account's cpanel, now create a MySQL User and
+password; then grant this user just created access to the MySQL Database
+created in step 1.
+
+Note: For help with the MySQL setup part of the installation consult the
+customer service of your hosting company.
+
+3. Write down the MySQL Database Name, Username, and Password as you will
+need it later on during the installation.
+
+4. Login thru FTP to your hosting account and create a folder below your
+public html folder for your data files; and upload all the files in the
+'data' folder of the package into this new data folder.
+
+5. Change the properties (CHMOD) of your data folder, and all 3 files inside
+it to 777.
+
+6. Write down the FULL Path to this new data folder as you will need it later
+on during the installation.
+
+7. Still thru FTP create a new folder, this time inside your public html
+folder, for the actual CGI files that will run your Paid-4-Email Program.
+
+8. Upload all the files, and folders inside the 'cgi-bin' folder of the
+package into this new actual cgi files folder.
+
+9. Write down the FULL URL to this new actual cgi files folder as you will need
+it later on during the installation.
+
+10. Change the properties (CHMOD) of all the files inside the actual cgi files
+folder, and all the files within the 'admin' & 'advert' folders inside it to 755.
+
+11. Edit the 'user-list.inc' 'advert-list.inc' and 'admin-list.inc' and change the
+$datadir variable to show the FULL Path to your data folder written down in step 6;
+and upload the new files to overwrite the ones in your hosting account.
+
+12. Edit the 'iConfig.pm' file and enter the MySQL Information, and Actual CGI
+files URL to their appropriate variables ($mysql_db, $mysql_u, $mysql_p, $cgi_bin);
+and enter the Actual CGI files URL with a '/admin' at the end in the $admin_cgi
+variable.
+
+(ie. If Actual CGI files URL is: http://yourdomain.com/cgi-bin then you would enter
+the following in the $admin_cgi variable: http://yourdomain.com/cgi-bin/admin)
+
+13. Change the other options to your liking, the variable name will tell you exactly
+what it is.
+
+14. Save and upload your new 'iConfig.pm' to overwrite the one in your hosting
+account.
+
+15. Edit the 'iAdvert.pm' file and enter the Advertisers CGI URL, which will be
+just like the $admin_cgi one, just that at the end it will show /advert
+
+(ie. If Actual CGI files URL is: http://yourdomain.com/cgi-bin then you would enter
+the following in the $advert_cgi variable: http://yourdomain.com/cgi-bin/advert)
+
+16. Run the MySQL Setup utility included by calling the 'install_mysql.cgi' from
+your $admin_cgi URL.  (ie. http://yourdomain.com/cgi-bin/admin/install_mysql.cgi).
+
+17. Edit the 'login.html' file included and make sure the 'action=""' part of the
+'<form ...' line in the code points to the full URL of that script being called.
+And now upload it to where you want it to be called from in your hosting account.
+
+Congratulations, you are done with the installation.
+
+To access your administrative section just call the $admin_cgi URL:
+ie. http://yourdomain.com/cgi-bin/admin/
+
+To login call the FULL URL to the 'login.html' page uploaded in step 16:
+ie. http://yourdomain.com/login.html
+
+To access your advertisers section just call the $advert_cgi URL:
+ie. http://yourdomain.com/cgi-bin/advert/
