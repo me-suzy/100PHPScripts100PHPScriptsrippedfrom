@@ -1,0 +1,95 @@
+#########################################################
+#                     AutoMail                          #
+#########################################################
+#                                                       #
+#                                                       #
+# This script was created by:                           #
+#                                                       #
+# PHPSelect Web Development Division.                   #
+# http://www.phpselect.com/                             #
+#                                                       #
+# This script and all included modules, lists or        #
+# images, documentation are copyright 2002              #
+# PHPSelect (http://www.phpselect.com/) unless          #
+# otherwise stated in the script.                       #
+#                                                       #
+# Purchasers are granted rights to use this script      #
+# on any site they own. There is no individual site     #
+# license needed per site.                              #
+#                                                       #
+# Any copying, distribution, modification with          #
+# intent to distribute as new code will result          #
+# in immediate loss of your rights to use this          #
+# program as well as possible legal action.             #
+#                                                       #
+# This and many other fine scripts are available at     #
+# the above website or by emailing the authors at       #
+# admin@phpselect.com or info@phpselect.com             #
+#                                                       #
+#########################################################
+
+[Overview]
+
+AutoMail lets you mail a series of unlimited emails 
+that are sent out to prospective customers/consumers 
+over a period of time designated in days by you. Setup 
+is as simple as it gets. Emails are highly customizable, 
+just create them in a text editor and upload to your 
+server. AutoMail runs on your unix based webserver 
+and allows you to send as many as you like every day of 
+the year. 
+
+#########################################################
+
+[Features]
+
++EASY web administration interface!
++Create as many messages as you want.
++You set all of the mailing options to your liking.
++Keep your product or business FRESH in visitors' minds!
++Generate tons of repeat traffic to your site.
++Get more orders and signups from "reluctant" visitors!
++Users can sign themselves up for your mailings.
++Users can unsubscribe/remove themselves.
++Personalize messages with subscribers' names!
+
+#########################################################
+
+Installation instructions for AutoMail
+
+Inside the zip you should find the following files :
+
+  autoresponder.php - autoresponder (advanced users only) 
+  common.php        - common functions and variables 
+  config.php        - variables you must set 
+  foot.php          - footer appended to output of pages 
+  index.php         - AutoMail admin interface 
+  install.php       - installation script 
+  INSTALL.txt       - this file
+  MANUAL.html       - installation/usage manual
+  messages.php      - message editor 
+  options.php       - preference editor 
+  process.php       - sends and tracks daily messages 
+  sample-subscribe-form.php - example self-subscribe form 
+  user.php          - handles user functions  
+
+Unzip the file and follow the directions in MANUAL.html
+to install, configure, and use AutoMail.
+
+#########################################################
+
+[Usage]
+
+Once AutoMail is installed, visit the index.php file
+in its installed directory. Create your password, then
+log in and begin using the script.
+
+#########################################################
+
+[Support]
+
+You can reach technical support at support@phpselect.com.
+You can also visit us at http://www.phpselect.com/ for more
+information regarding this and other scripts.
+
+Thanks!
