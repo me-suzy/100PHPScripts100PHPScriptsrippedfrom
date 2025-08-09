@@ -1,0 +1,52 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Create your PRO account.</title>
+<style>
+<!--
+body          { font-family: Arial; font-size: 10pt }
+.form-input   { font-family: Arial; font-size: 11px; color: #006699; background-color: #CCCCCC; height: 19 }
+.form-button  { font-family: Arial; font-size: 11px; color: #FFFFFF; background-color: #006699; height: 19 }
+-->
+</style>
+</head>
+
+<body>
+<form method="POST" action="/cgi-bin/signup.cgi">
+<h2 align="center"><span style="font-weight: 400">
+<font face="Arial Black" color="#006699">iComplete L.E. Pro PRO Demo Safelist</font></span></h2>
+<p align="center"><b><font face="Arial" size="2">Pro Members Signup:</font></b></p>
+<p align="center"><font face="Arial" size="2">&nbsp; </font></p>
+<p align="center"><font face="Arial" size="2">User ID:<br>
+</font><font size="2">
+<input class="form-input" maxLength="25" size="25" name="new_userid"></font></p>
+<p align="center"><font face="Arial" size="2">Password:<br>
+</font><font size="2">
+<input class="form-input" type="password" maxLength="25" size="25" value name="new_password"></font></p>
+<p align="center"><font face="Arial" size="2">Password: (</font><b><font face="Arial" size="1" color="#006699">verify</font></b><font face="Arial" size="2">)<br>
+</font><font size="2">
+<input class="form-input" type="password" maxLength="25" size="25" value name="new_passwordv"></font></p>
+<p align="center"><font face="Arial" size="2">Full Name:<br>
+</font><font size="2">
+<input class="form-input" maxLength="70" size="50" name="new_fullname"></font></p>
+<p align="center"><font face="Arial" size="2">Contact Email: (</font><font color="#006699" size="1" face="Arial"><b>admin 
+use only</b></font><font face="Arial" size="2">)<br>
+</font><font size="2">
+<input class="form-input" maxLength="60" size="40" name="new_contact"></font></p>
+<p align="center"><font face="Arial" size="2">Subscribed Email:<br>
+</font><font size="2">
+<input class="form-input" maxLength="60" size="40" name="new_subscribed"></font></p>
+<p align="center"><font face="Arial" size="2">Member Type:<br>
+<font color="#006699"><b>PRO</b></font></font></p>
+<p align="center">
+<font face="Arial">
+<input type="submit" value="Create Account" class="form-button"></font></p>
+<font face="Arial">
+<input type="hidden" name="mtY" value="PRO">
+</font>
+</form>
+
+</body>
+
+</html>
