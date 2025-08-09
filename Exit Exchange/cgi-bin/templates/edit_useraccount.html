@@ -1,0 +1,109 @@
+<HTML>
+<HEAD>
+<TITLE>McDev Exit Exchange</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+		<link href="../../05.css" rel="stylesheet" media="screen">
+	</HEAD>
+<BODY BGCOLOR=#6e6e6e LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
+		<!-- ImageReady Slices (navigation.psd) -->
+		<table width="95%" border="0" cellspacing="2" cellpadding="0" align="center">
+			<tr>
+				<td width="207">
+					<TABLE WIDTH=207 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+						<TR>
+							<TD COLSPAN=3><IMG SRC="../../images/index_01.jpg" WIDTH=207 HEIGHT=166 ALT=""></TD>
+						</TR>
+						<TR>
+							<TD ROWSPAN=6><IMG SRC="../../images/index_02.jpg" WIDTH=13 HEIGHT=402 ALT=""></TD>
+							<TD><a href="get_site.pl?id=home&ref=$ref"><IMG SRC="../../images/index_03.jpg" WIDTH=177 HEIGHT=43 ALT="" border="0"></a></TD>
+							<TD ROWSPAN=6><IMG SRC="../../images/index_04.jpg" WIDTH=17 HEIGHT=402 ALT=""></TD>
+						</TR>
+						<TR>
+							<TD><a href="get_site.pl?id=register&ref=$ref"><IMG SRC="../../images/index_05.jpg" WIDTH=177 HEIGHT=44 ALT="" border="0"></a></TD>
+						</TR>
+						<TR>
+							<TD><a href="get_site.pl?id=login&ref=$ref"><IMG SRC="../../images/index_06.jpg" WIDTH=177 HEIGHT=44 ALT="" border="0"></a></TD>
+						</TR>
+						<TR>
+							<TD><a href="get_site.pl?id=faq&ref=$ref"><IMG SRC="../../images/index_07.jpg" WIDTH=177 HEIGHT=44 ALT="" border="0"></a></TD>
+						</TR>
+						<TR>
+							<TD><a href="get_site.pl?id=contact&ref=$ref"><IMG SRC="../../images/index_08.jpg" WIDTH=177 HEIGHT=43 ALT="" border="0"></a></TD>
+						</TR>
+						<TR>
+							<TD><IMG SRC="../../images/index_09.jpg" WIDTH=177 HEIGHT=184 ALT=""></TD>
+						</TR>
+					</TABLE>
+				</td>
+				<td align="center" valign="top">
+					<p><font size="+3" color="#e6e6e6" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><br>McDev Exit Exchange</b></font></p>
+					<p></p>
+					<p><font size="+1" color="#e6e6e6" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><br>
+							Here you can change your account profile:</font></p>
+					<table width="80%" border="0" cellspacing="2" cellpadding="0"><form action=apply_accountchanges.pl?username=$username&sessid=$sessid method=post>
+						<tr>
+							<td>
+								<div align="right">
+									Username (cannot be changed):</div>
+							</td>
+							<td><input type=text name=username value="$username" size=20 readonly></td>
+						</tr>
+						<tr>
+							<td>
+								<div align="right">
+									Old password:</div>
+							</td>
+							<td><input type=password name=old_password size=20 maxlength=14></td>
+						</tr>
+						<tr>
+							<td>
+								<div align="right">
+									New password (leave blank to keep old password):</div>
+							</td>
+							<td><input type=password name=new_password1 size=20 maxlength=14></td>
+						</tr>
+						<tr>
+							<td>
+								<div align="right">
+									Repeat new password (leave blank to keep old one):</div>
+							</td>
+							<td><input type=password name=new_password2 size=20 maxlength=14></td>
+						</tr>
+						<tr>
+							<td>
+								<div align="right">
+									First name:</div>
+							</td>
+							<td><input type=text name=first_name value="$first_name" size=20 maxlength=16></td>
+						</tr>
+						<tr>
+							<td>
+								<div align="right">
+									Last name:</div>
+							</td>
+							<td><input type=text name=last_name value="$last_name" size=20 maxlength=16></td>
+						</tr>
+						<tr>
+							<td>
+								<div align="right">
+									E-Mail:</div>
+							</td>
+							<td><input type=text name=email value="$email" size=30 maxlength=60></td>
+						</tr>
+							<tr>
+								<td colspan="2"><br>
+									<div align="center">
+										<input type=submit value="Apply changes!">
+									</div>
+								</td>
+							</tr>
+						
+					</table>
+					<p></p>
+					<div align="center"></div>
+				</td>
+			</tr></form>
+		</table>
+		<!-- End ImageReady Slices -->
+</BODY>
+</HTML>
