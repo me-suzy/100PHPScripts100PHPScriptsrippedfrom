@@ -1,0 +1,113 @@
+================================================================================
+For prompt, installation by the writer of the package, feel free to contact me
+at: webmaster@iphat.net   Price for installation is only $15.00
+================================================================================
+
+Installation Instructions:
+
+1. Create a directory called "iSlist" in your main web directory.
+   ie. http://www.yourdomain.com/iSlist/
+
+2. Upload the login.html and signup.html to the safe list directory
+   you just created on step 1.  Rename and upload the prosignup.html,
+   give it a unique name so people won't be able to just guess this
+   name.
+
+* the login.html is where people will login to the safelist
+* the signup.html is where people will create a new FREE 
+  safelist account (for free memberships!)
+* the prosignup.html is where people will create a new PRO
+  safelist account (for pro memberships!)
+
+You can edit all three of them to fit your design, just make sure
+that the form elements stay the same.
+
+
+3. Create a directory called "iSlist" in your cgi-bin directory.
+   ie. http://www.yourdomain.com/cgi-bin/iSlist/
+
+4. Create a directory called "data", for security reasons it should
+   be placed on a folder below your public html folder, or it can be 
+   inside this safelist directory you just created on step 3.
+
+5. Make sure that the first line of all the .cgi files is pointing to
+   the right place for Perl on your server.
+   ie. /usr/bin/perl
+
+6. Upload all of the .cgi files into the /cgi-bin/iSlist/ directory
+   created on step 3.
+
+7. Upload the .inc files into the data directory you created on step 4.
+
+CHMOD All the *.cgi files to 0755
+CHMOD all the *.inc files to 0777
+
+(You may need to CHMOD the data directory to 777 depending on your server)
+
+
+Safelist Setup
+===============
+
+1. Open the config.cgi file in a text editor (like windows notepad)
+   and edit the variables to reflect your own websites paths, etc..
+
+   All the variables have the explanation of what they are right
+   next to each of them.
+
+2. Overwrite the config.cgi file on your site with the new one.
+
+
+* * That is all of the configuration needed! * *
+
+
+MySQL Database Setup
+====================
+
+
+   Assuming that a MySQL database for the safelist to use exists, and
+   that it has been setup properly in the config.cgi then.
+
+1. Open your browser and go to the mysql.cgi file, the url would look
+   something like: http://www.yourdomain.com/cgi-bin/iSlist/mysql.cgi
+
+If you get an error or if it doesn't setup your database you need to
+check the mysql variable in the setup file and try it again. You also
+may need to enter the hostname and or port number for this to work
+correctly.
+   
+Once this script has been ran and the database has been setup successfully
+then delete it from your server as this is only needed to be done once.
+
+It sets up a table called "safelist" in your MySQL database with all
+of the individual names already created for you within the database.
+
+After it creates the database it will automatically setup an admin
+account (yours) and will have the username of "admin" and the password
+you have entered for admin use in the config.cgi file.
+
+Go to your login page and login using this information to make sure
+everything works correctly and set the template colors to your liking
+(you can do so simply, from the config.cgi file).
+
+Login and edit your admin account information:
+http://www.yourdomain.com/iSlist/login.html
+
+Login to the admin section and edit the Banner and Main page information:
+http://www.yourdomain.com/cgi-bin/iSlist/admin.cgi
+
+Please test everything thouroughly before giving access to the public.
+
+
+Final Notes
+=============
+
+By now you should have the list up and running correctly, if you can't
+seem to get it to work right and need us to install it for you we will
+do it for you for a very reasonable install fee. ($15.00)
+
+
+Ivan (Iphat.net)
+Programmer/Owner
+http://www.iphat.net
+http://www.iphatffa.net
+http://www.iphatlist.com
