@@ -1,0 +1,279 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>: iComplete L.E. Professional : Installation Instructions :</title>
+<style>
+<!--
+a            { color: #000080; font-weight: bold }
+a:hover      { color: Red; font-weight: bold; font-decoration: overline underline }
+body         { font-family: MS Sans Serif; font-size: 10pt }
+td           { font-family: MS Sans Serif; font-size: 10pt }
+-->
+</style>
+</head>
+<body>
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="10" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" id="AutoNumber1" width="60%">
+    <tr>
+      <td bgcolor="#000080" align="center"><font color="#FFFF00"><b>iComplete 
+      L.E. Professional Installation Instructions</b></font></td>
+    </tr>
+    <tr>
+      <td><b>1. </b>Unpack the contents of the <font color="#FF0000">
+      iCompleteLEPro.zip</font> into an empty folder on your computer. Make sure 
+      to keep the directory structure the ZIP file has as it will be used during 
+      the installation.<br>
+      <br>
+      The directory structure should look like this:<br>
+      <br>
+      ..../empty folder/Admin CGI/<br>
+      ..../empty folder/Admin CGI/adverlinks.cgi<br>
+      ..../empty folder/Admin CGI/affiliates.cgi<br>
+      ..../empty folder/Admin CGI/editconfig.cgi<br>
+      ..../empty folder/Admin CGI/editpages.cgi<br>
+      ..../empty folder/Admin CGI/index.cgi<br>
+      ..../empty folder/Admin CGI/inst_mysql.cgi<br>
+      ..../empty folder/Admin CGI/mailer.cgi<br>
+      ..../empty folder/Admin CGI/navigation.cgi<br>
+      ..../empty folder/Admin CGI/search.cgi<br>
+      ..../empty folder/Admin CGI/unverified.cgi<br>
+      <br>
+      ..../empty folder/Advertisers CGI/<br>
+      ..../empty folder/Advertisers CGI/editaccount.cgi<br>
+      ..../empty folder/Advertisers CGI/index.cgi<br>
+      ..../empty folder/Advertisers CGI/neworder.cgi<br>
+      ..../empty folder/Advertisers CGI/signup.cgi<br>
+      ..../empty folder/Advertisers CGI/stats.cgi<br>
+      ..../empty folder/Advertisers CGI/support.cgi<br>
+      ..../empty folder/Advertisers CGI/verify.cgi<br>
+      <br>
+      ..../empty folder/Bonus Files/<br>
+      ..../empty folder/Bonus Files/Side Navigation/<br>
+      ..../empty folder/Bonus Files/Side Navigation/html_foot.inc<br>
+      ..../empty folder/Bonus Files/Side Navigation/html_head.inc<br>
+      <br>
+      ..../empty folder/Data Files/<br>
+      ..../empty folder/Data Files/AffPayOut.pm<br>
+      ..../empty folder/Data Files/alinks/<br>
+      ..../empty folder/Data Files/alinks_sent.idb<br>
+      ..../empty folder/Data Files/banned.idb<br>
+      ..../empty folder/Data Files/codes/<br>
+      ..../empty folder/Data Files/econfig/<br>
+      ..../empty folder/Data Files/econfig/Advertisers.inc<br>
+      ..../empty folder/Data Files/econfig/DisplayPrices.inc<br>
+      ..../empty folder/Data Files/econfig/editnow-advertisers.inc<br>
+      ..../empty folder/Data Files/econfig/editnow-displayprices.inc<br>
+      ..../empty folder/Data Files/econfig/editnow-general.inc<br>
+      ..../empty folder/Data Files/econfig/editnow-memlinks.inc<br>
+      ..../empty folder/Data Files/econfig/editnow-normalsystem.inc<br>
+      ..../empty folder/Data Files/econfig/editnow-pointssystem.inc<br>
+      ..../empty folder/Data Files/econfig/editnow-systemaccess.inc<br>
+      ..../empty folder/Data Files/econfig/General.inc<br>
+      ..../empty folder/Data Files/econfig/MemberLinks.inc<br>
+      ..../empty folder/Data Files/econfig/NormalSystem.inc<br>
+      ..../empty folder/Data Files/econfig/PointsSystem.inc<br>
+      ..../empty folder/Data Files/econfig/SystemAccess.inc<br>
+      ..../empty folder/Data Files/html_foot.inc<br>
+      ..../empty folder/Data Files/html_head.inc<br>
+      ..../empty folder/Data Files/iConfig.pm<br>
+      ..../empty folder/Data Files/iConfigAdver.pm<br>
+      ..../empty folder/Data Files/iMLinks.pm<br>
+      ..../empty folder/Data Files/iSubs.pm<br>
+      ..../empty folder/Data Files/iSubsAdm.pm<br>
+      ..../empty folder/Data Files/iSubsAdver.pm<br>
+      ..../empty folder/Data Files/txt/<br>
+      ..../empty folder/Data Files/txt/banners_links.txt<br>
+      ..../empty folder/Data Files/txt/benefitsplatinum.txt<br>
+      ..../empty folder/Data Files/txt/benefitspro.txt<br>
+      ..../empty folder/Data Files/txt/default_banner.txt<br>
+      ..../empty folder/Data Files/txt/disclaimer.txt<br>
+      ..../empty folder/Data Files/txt/egold.txt<br>
+      ..../empty folder/Data Files/txt/memberlinks.txt<br>
+      ..../empty folder/Data Files/txt/neworders.txt<br>
+      ..../empty folder/Data Files/txt/paypal-subscriptions.txt<br>
+      ..../empty folder/Data Files/txt/paypal.txt<br>
+      ..../empty folder/Data Files/txt/sitenews.txt<br>
+      <br>
+      ..../empty folder/HTML Files/<br>
+      ..../empty folder/HTML Files/index.html<br>
+      ..../empty folder/HTML Files/login.html<br>
+      ..../empty folder/HTML Files/signup.html<br>
+      ..../empty folder/HTML Files/signup_platinum.html<br>
+      ..../empty folder/HTML Files/signup_pro.html<br>
+      <br>
+      ..../empty folder/Members CGI/<br>
+      ..../empty folder/Members CGI/alinks.cgi<br>
+      ..../empty folder/Members CGI/earnings.cgi<br>
+      ..../empty folder/Members CGI/editaccount.cgi<br>
+      ..../empty folder/Members CGI/getpoints.cgi<br>
+      ..../empty folder/Members CGI/in.cgi<br>
+      ..../empty folder/Members CGI/login.cgi<br>
+      ..../empty folder/Members CGI/memlinks.cgi<br>
+      ..../empty folder/Members CGI/optout.cgi<br>
+      ..../empty folder/Members CGI/readclick.cgi<br>
+      ..../empty folder/Members CGI/referrals.cgi<br>
+      ..../empty folder/Members CGI/sendit.cgi<br>
+      ..../empty folder/Members CGI/signup.cgi<br>
+      ..../empty folder/Members CGI/support.cgi<br>
+      ..../empty folder/Members CGI/tr.cgi<br>
+      ..../empty folder/Members CGI/tracker.cgi<br>
+      ..../empty folder/Members CGI/upgrade.cgi<br>
+      ..../empty folder/Members CGI/verify.cgi<br>
+      <br>
+      <b>2. </b>Login thru FTP to the site where you are installing the package 
+      to, make sure you are login in with the main account information so you 
+      can access the main folder of your account as that's where we will be 
+      working on the next step.<br>
+      <br>
+      <b>3. </b>Make sure you are in the main folder of your account, you'll 
+      know you're there because you will see the folder that holds the HTML 
+      files of your account that are served to the web, normally called 'public_html', 
+      'username-www', 'web', etc. And make a new folder inside here (main 
+      folder) this will be your data directory and you can call it as you wish, 
+      just make sure you write down the FULL PATH to this new folder (you'll 
+      need it).<br>
+      <br>
+      <b>4. </b>Upload all the files inside the ..../empty folder/Data Files/ 
+      folder into the folder you just created in Step 3, make sure to keep the 
+      same structure as the original folder.<br>
+      <br>
+      <i><b>4a. </b></i>Chmod the data directory folder and all the files &amp; 
+      folders you just uploaded in the last step to 777. (<font color="#FF0000"><b>NOT 
+      FOR WINDOWS SERVER INSTALLATIONS</b></font>)<br>
+      <br>
+      <b>5. </b>Now log off from your FTP account, and open your preferred text 
+      editor, like Notepad (from windows) and not a word processor.<br>
+      <br>
+      One by one open every *.cgi file in each one of the ..../empty folder/XXXXX 
+      CGI/ folders and: a) make sure that the path to perl in the first line is 
+      right and b) scroll down a little to the where you'll see 2 to 4 
+      consecutive lines strating<br>
+      with 'require &quot;/full/path/to/data/directory/xxxxxxxxx.pm' and replace each 
+      time you see the /full/path/to/data/directory/ with the actual FULL PATH 
+      to the data directory you made in your hosting account.<br>
+      <br>
+      <b>6. </b>Now login to the web control panel (CPanel) of your website, 
+      here you will create the MySQL Database, a MySQL Username &amp; Password, and 
+      then grant access for this new MySQL User to the new MySQL Database.<br>
+      <br>
+      For help with this step contact the support department of your hosting 
+      company. Normally they'll have instructions on how to do this in the 
+      support section of their site.<br>
+      <br>
+      Write down the MySQL Database Name, Username and Password you just made.<br>
+      <br>
+      <b>7. </b>Open the iConfig.pm file inside the ..../empty folder/Data 
+      Files/ folder.and find the following variables and set them as described:<br>
+      <br>
+      <b>NOTE:</b> As you have probably already noticed there are 3 different 
+      CGI folders for the package, and at this point you will be decidin/entering 
+      the complete URL to two of them. Make sure you use to write down the name 
+      you used in each URL.<br>
+      <br>
+      <b><font color="#008000">$prefix</font></b> - This should be a one word 
+      (NO SPACES) unique identifier you want used for the beginning part of the 
+      name of all MySQL Database tables made and used by the package.<br>
+      <font color="#008000"><b>$cgi_bin</b></font> - This should be the complete 
+      URL to where you will upload all the files in the ..../empty 
+      folder/Members CGI/ folder of your package. The recommended setting for 
+      this variable is: &quot;http://www.yourdomain.com/cgi-bin&quot;<br>
+      Making sure not to have a trailing slash (/). And the folder name to write 
+      down in that case would be 'cgi-bin'.<br>
+      <font color="#008000"><b>$admin_cgi</b></font> - Same as above ($cgi_bin) 
+      but for all the files you will upload from inside ..../empty folder/Admin 
+      CGI/ folder of your package. Make sure to use a different URL/folder name 
+      from the members one.<br>
+      <font color="#008000"><b>$data_dir</b></font> - The FULL Path to your data 
+      directory.<br>
+      <font color="#008000"><b>$mysql_*</b></font> - Enter the information for 
+      the MySQL Database, User and Password created in each appropriate $mysql_XX 
+      field. Try leaving the host one blank first, as most all installations 
+      work this way.<br>
+      <br>
+      The rest of the file is irrelevant for the installation process but can be 
+      set if you want to do so right now, everything is just what the name of 
+      the variable says.<br>
+      <br>
+      <b>8. </b>Now, edit all the *.html files and apply your web design to them 
+      and make sure that the action= part of the &lt;form tag on each file points 
+      to the right place/URL.<br>
+      <br>
+      <b>9. </b>Login thru FTP to your account again. this time go inside the 
+      data directory folder and upload the new iConfig.pm file over the one 
+      that's there now.<br>
+      <br>
+      Now go to the folder where you place files to be accessed thru the web.<br>
+      <br>
+      <b>10. </b>Make three new folders, two with the names you used/wrote down 
+      in Step 7 and the third one with a name something like 'adverts' or 
+      'advertisers' this is the folder that will be given to your advertisers 
+      for them to track the results of their campaings. The Advertisers Section.<br>
+      <br>
+      And upload the files from each ..../empty folder/XXXXX CGI/ folder to it's 
+      appropriate folder on your hosting account. And Chmod the properties of 
+      all the *.cgi files uploaded to 755.<p>Also upload all the *.html files to 
+      either the web folder or a new folder you make for them.<br>
+      <br>
+      Don't log off from FTP yet as there is just one more thing to do thru it 
+      in the next step.<br>
+      <br>
+      <b>11. </b>The last thing to do is run the inst_mysql.cgi file thru your 
+      web browser to create the MySQL tables for your package in your new 
+      database.<br>
+      <br>
+      This file is located in the Admin CGI folder so call the url for your 
+      admin folder with that filename. ie: http://www.yourdomain.com/admin-cgi/inst_mysql.cgi<br>
+      <br>
+      If the information entered in the iConfig.pm file is incorrect you will 
+      receive an error message when you run this file. The message will 
+      basically tell you exactly what's wrong.<br>
+      <br>
+      <b>NOTE: </b>Thru FTP delete this inst_mysql.cgi file as you only need to 
+      run this file once!!! You can now logoff from FTP.</p>
+      <p><b>12. </b>Login to 
+      your Admin Section and configure the rest of the Settings, just call the 
+      URL where you uploaded the cgi scripts for you (Admin CGI folder) just 
+      like it is, with no script name at the end, to access the Admin Section 
+      Login. If you get a &quot;page not found&quot; error then call it with /index.cgi 
+      after it.<br>
+      <br>
+      ie. http://www.yourdomain.com/admin-cgi/index.cgi<br>
+      <br>
+      Use the administrative password you entered in the iConfig.pm file on to 
+      login.&nbsp; Try every single option of your Admin Section so you can a) 
+      make sure all the settings available are setup to your liking, and b) get 
+      acquainted with them.&nbsp; Everything in the Admin Section is mostly 
+      self-explanatory.</td>
+    </tr>
+    <tr>
+      <td bgcolor="#000080" align="center"><font color="#FFFF00"><b>iComplete 
+      L.E. Professional Usage URLs</b></font></td>
+    </tr>
+    <tr>
+      <td>The /admin-cgi/, and /advertisers-cgi/ below should be replaced with 
+      their appropriate name on your hosting account/site.<p><b>Administrative 
+      Section:<br>
+      </b>http://www.yourdomain.com/admin-cgi/index.cgi<br>
+      This is where you will do everything you have/want to as the Administrator 
+      of your list</p>
+      <p><b>Members Login Page:<br>
+      </b>http://www.yourdomain.com/login.html</p>
+      <p><b>Advertisers Section:<br>
+      </b>http://www.yourdomain.com/advertisers-cgi/<br>
+      This is where your advertisers will track their orders and/or place new 
+      ones.</p>
+      <p><b>Free Members Signup Page:<br>
+      </b>http://www.yourdomain.com/signup.html</p>
+      <p><b>Pro Members Signup Page:<br>
+      </b>http://www.yourdomain.com/signup_pro.html</p>
+      <p><b>Platinum Members Signup Page:<br>
+      </b>http://www.yourdomain.com/signup_platinum.html</td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+</body>
+</html>
