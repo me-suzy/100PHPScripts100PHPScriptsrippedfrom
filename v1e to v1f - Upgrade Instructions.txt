@@ -1,0 +1,11 @@
+Follow the instructions on the "Modification History.txt" file under the title:
+"iAffiliate (Rev. F) - Released July 2nd, 2003" to upgrade from any earlier
+versions to v1f.
+
+If you have an earlier version than v1e installed on your system, follow the
+instructions under the title "iAffiliate (Rev. E) - Released May 30th, 2003"
+before you do the next ones;  otherwise those instructions are not needed.
+
+
+Admin
+http://IphatScripts.com/
