@@ -1,0 +1,38 @@
+Hello %name%,
+
+Thanks for joining OurSite just now. We hope you have a wonderful 
+time while using the site and also hope you get to meet all sorts 
+of new and intersting people here.
+
+Below is the info you submitted.
+
+
+Your Name: %name%
+Your Email: %email%
+Homepage URL: %url%
+Gender: %sex%
+Your Age: %age%
+Looking for: %pref%
+Your City: %city%
+Your State: %state%
+Country: %country%
+Currently: %situation%
+Ethnicity: %race%
+Religion: %religion%
+Height: %height%
+Weight: %weight%
+Hair Color: %hair%
+Eye Color: %eyes%
+Formal Education completed: %education%
+Occupation: %work%
+Your Hobbies: %hobbies%
+Perfect Match's age: %matchage%
+Details about you: %desc%
+
+
+
+
+Thanks again, and have a great day!
+
+
+%ip_address%
