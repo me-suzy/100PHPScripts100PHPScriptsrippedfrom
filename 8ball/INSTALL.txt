@@ -1,0 +1,90 @@
+#########################################################
+#                      8-Ball                           #
+#########################################################
+#                                                       #
+#                                                       #
+# This script was created by:                           #
+#                                                       #
+# PHPSelect Web Development Division.                   #
+# http://www.phpselect.com/                             #
+#                                                       #
+# This script and all included modules, lists or        #
+# images, documentation are copyright 2002              #
+# PHPSelect (http://www.phpselect.com/) unless          #
+# otherwise stated in the script.                       #
+#                                                       #
+# Purchasers are granted rights to use this script      #
+# on any site they own. There is no individual site     #
+# license needed per site.                              #
+#                                                       #
+# Any copying, distribution, modification with          #
+# intent to distribute as new code will result          #
+# in immediate loss of your rights to use this          #
+# program as well as possible legal action.             #
+#                                                       #
+# This and many other fine scripts are available at     #
+# the above website or by emailing the authors at       #
+# admin@phpselect.com or info@phpselect.com             #
+#                                                       #
+#########################################################
+
+[Overview]
+8Ball is a PHP script which enables your site's users to 
+ask it a question and then receive an answer in classic 
+"Magic 8-Ball" format. You can easily modify responses to
+make the script even more a part of your site's design or
+feel. This script makes people a part of your site and 
+people love that.
+
+#########################################################
+
+[Features]
+
++100% templates
++Ability to change responses
++Entertaining for visitors
++Makes people refer others to your site
+
+#########################################################
+
+Installation instructions for 8-Ball
+
+Inside the zip you should find the following files :
+
+	INSTALL.txt      - Installation instructions
+	8ball.php	 - the main PHP script
+	template.html 	 - example template HTML file
+
+Unzip the file and edit template.html to suit your needs.
+Where you want the form to appear in the web page, insert
+the string %%FORM%% and where you want the answer to be
+displayed, insert the string %%ANSWER%%. 
+
+Open 8ball.php and set the $template variable to the name 
+of your template HTML file, if different from the default
+"template.html." Edit the $answers array, if you like, to
+specify your own custom responses.
+
+Upload the script and template HTML file to your web 
+server in ASCII mode. Point your web browser to the 
+8ball.php file in order to use the 8ball.
+
+#########################################################
+
+[Usage]
+
+There are several ways to use this script. You can make 
+the templates full standalone pages and just link to the 
+8ball.php from your website, or you can make the templates
+as tables and use a PHP <? include() ?> statement to make 
+the script a integral part of an existing webpage.
+
+#########################################################
+
+[Support]
+
+You can reach technical support at support@phpselect.com.
+You can also visit us at http://www.phpselect.com/ for more
+information regarding this and other scripts.
+
+Thanks!
