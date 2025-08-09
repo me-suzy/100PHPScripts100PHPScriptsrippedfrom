@@ -1,5 +1,5 @@
 <?
-/* 2002 Proverbs, LLC. All rights reserved. */ 
+/* ©2002 Proverbs, LLC. All rights reserved. */ 
 
    require "db_mysql.inc";
    require "config.inc.php";
