@@ -1,0 +1,102 @@
+
+#########################################################
+#                       Replacer                        #
+#########################################################
+#                                                       #
+# This script was created by:                           #
+#                                                       #
+# PHPSelect Web Development Division.                   #
+# http://www.phpselect.com/                             #
+#                                                       #
+# This script and all included modules, lists or        #
+# images, documentation are copyright 2002              #
+# PHPSelect (http://www.phpselect.com/) unless          #
+# otherwise stated in the script.                       #
+#                                                       #
+# Purchasers are granted rights to use this script      #
+# on any site they own. There is no individual site     #
+# license needed per site.                              #
+#                                                       #
+# Any copying, distribution, modification with          #
+# intent to distribute as new code will result          #
+# in immediate loss of your rights to use this          #
+# program as well as possible legal action.             #
+#                                                       #
+# This and many other fine scripts are available at     #
+# the above website or by emailing the authors at       #
+# admin@phpselect.com or info@phpselect.com             #
+#                                                       #
+#########################################################
+
+
+[Overview]
+
+Replacer is a powerful search and replace utility which 
+allows you to replace words, terms, phrases, and even 
+HTML code within a large number of files at once. 
+
+#########################################################
+
+[Features]
+
++Search and replace from the web without having to learn
+ unix commands like sed
++Supports replacement of alphanumeric text, as well as 
+ common HTML characters:  \ / : ? & ( ) < > # - 
++Works on any file on which PHP has write permissions
++Fast and easy to use
++You specify the starting directory
++Optional recurse mode searches all directories below the
+ starting directory
++Optional verbose mode reports filenames of successes and
+ failures
++Can restrict search and replacing to file types of a 
+ specific extension (e.g. search .html files only)
+
+#########################################################
+
+Installation instructions for Replacer
+
+Inside the zip you should find the following files :
+
+	INSTALL.txt      - Installation instructions
+        replacer.php     - The main PHP script
+	template.html    - The HTML interface template
+
+Unzip the file and upload all of the files to your web
+server in ASCII mode.
+
+#########################################################
+
+[Usage]
+
+Access replacer.php in your web browser and fill out the
+form with the values you'd like to use. Submit the form 
+to begin the search and replace process. When searching
+and replacement is complete, a report will be presented
+showing how many matches were found, how many replacements
+were successful, and how many failed due to bad file
+permissions. If you choose the optional verbose mode,
+you will receive a list of all matching files and their
+status (success or failure) as well.
+
+WARNING: THIS SCRIPT WILL REPLACE ANY MATCHES IT CAN,
+INCLUDING THOSE INSIDE OF BINARY FILES!!
+
+It is HIGHLY RECOMMENDED that you ALWAYS use the optional
+file type restriction feature, by specifying an extension
+and checking the "Only files with extension" checkbox. If
+you do not use this feature, it's quite possible that 
+the search and replace will overwrite portions of binary
+files on your server (such as JPGs) and corrupt them. You
+have been warned :)
+
+#########################################################
+
+[Support]
+
+You can reach technical support at support@phpselect.com.
+You can also visit us at http://www.phpselect.com/ for more
+information regarding this and other scripts.
+
+Thanks!
