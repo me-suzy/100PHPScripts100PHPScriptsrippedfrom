@@ -1,0 +1,105 @@
+<HTML>
+<HEAD>
+<TITLE>McDev Exit Exchange</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+		<link href="../../05.css" rel="stylesheet" media="screen">
+	</HEAD>
+<BODY BGCOLOR=#6e6e6e LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
+		<!-- ImageReady Slices (navigation.psd) -->
+		<table width="95%" border="0" cellspacing="2" cellpadding="0" align="center">
+			<tr>
+				<td width="207" valign="top">
+					<TABLE WIDTH=207 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+						<TR>
+							<TD COLSPAN=3><IMG SRC="../../images/index_01.jpg" WIDTH=207 HEIGHT=166 ALT=""></TD>
+						</TR>
+						<TR>
+							<TD ROWSPAN=6><IMG SRC="../../images/index_02.jpg" WIDTH=13 HEIGHT=402 ALT=""></TD>
+							<TD><a href="get_site.pl?id=home&ref=$ref"><IMG SRC="../../images/index_03.jpg" WIDTH=177 HEIGHT=43 ALT="" border="0"></a></TD>
+							<TD ROWSPAN=6><IMG SRC="../../images/index_04.jpg" WIDTH=17 HEIGHT=402 ALT=""></TD>
+						</TR>
+						<TR>
+							<TD><a href="get_site.pl?id=register&ref=$ref"><IMG SRC="../../images/index_05.jpg" WIDTH=177 HEIGHT=44 ALT="" border="0"></a></TD>
+						</TR>
+						<TR>
+							<TD><a href="get_site.pl?id=login&ref=$ref"><IMG SRC="../../images/index_06.jpg" WIDTH=177 HEIGHT=44 ALT="" border="0"></a></TD>
+						</TR>
+						<TR>
+							<TD><a href="get_site.pl?id=faq&ref=$ref"><IMG SRC="../../images/index_07.jpg" WIDTH=177 HEIGHT=44 ALT="" border="0"></a></TD>
+						</TR>
+						<TR>
+							<TD><a href="get_site.pl?id=contact&ref=$ref"><IMG SRC="../../images/index_08.jpg" WIDTH=177 HEIGHT=43 ALT="" border="0"></a></TD>
+						</TR>
+						<TR>
+							<TD><IMG SRC="../../images/index_09.jpg" WIDTH=177 HEIGHT=184 ALT=""></TD>
+						</TR>
+					</TABLE>
+				</td>
+				<td align="center" valign="top">
+					<p><font size="+3" color="#e6e6e6" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><br>McDev Exit Exchange</b></font></p>
+					<p></p>
+					<p><font size="+1" color="#e6e6e6" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><br>
+							<b><u>User Account</u></b></font></p>
+					<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color=#e6e6e6>This is the Account of:<br>
+							<b>$name</b></font></p>
+					<table width="70%" border="0" cellspacing="2" cellpadding="0">
+						<tr>
+							<td width="50%"><a href="edit_useraccount.pl?username=$username&sessid=$sessid">Edit Account-Info</a></td>
+							<td width="50%">
+								<div align="right">
+									<a href="see_userreferrals.pl?username=$username&sessid=$sessid">
+									See Referrals</a></div>
+							</td>
+						</tr>
+					</table>
+					<p><font color="#e6e6e6" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Just enter the following code into the HEAD-area of your website:</font></p>
+					<p><font color="#e6e6e6"><i>&lt;script language=&quot;JavaScript&quot; src=&quot;http://www.cosmicdev.com/cgi-bin/system.pl?username=$username&quot;&gt;&lt;/script&gt;</i></font></p>
+					<p><font color="#e6e6e6" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Then enter the following code into the BODY-tag of your website:</font></p>
+					<p><font color="#e6e6e6"><i>onUnload=&quot;getExit()&quot;</i></font></p>
+					<p><font color="#e6e6e6" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Send your referrals to the following link:</font></p>
+					<p><font color="#e6e6e6"><i>http://www.xyz.com/cgi-bin/get_site.pl?id=home&amp;ref=$username</i></font></p>
+					<p><font color="#e6e6e6" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Your current account-balance is:</font><font color="#e6e6e6"> <b>$credits credits</b>.</font></p>
+					<p><font color="#e6e6e6" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">You have totally earned:</font><font color="#e6e6e6">&nbsp;<b>$credits_earned credits</b>.</font></p>
+					<p>
+					$urls_table<br>
+					<table width="85%" border="1" cellspacing="2" cellpadding="0"><form action=add_userurl.pl?username=$username&sessid=$sessid method=post>
+							<tr>
+								<td width="70">
+								<div align="right">
+									<font color="#e6e6e6"><b>Add URL:</b></font></div>
+							</td>
+								<td width="295">
+								<div align="left">
+									<input type=text name=url size=40 maxlength=120></div>
+							</td>
+								<td width="60">
+								<div align="right">
+									<b><font color="#e6e6e6">Weight:</font></b></div>
+							</td>
+								<td width="40">
+								<div align="left">
+									<input type=text name=weight size=5 maxlength=4></div>
+							</td>
+								<td width="60">
+									<div align="center">
+										<input type=submit value="Add URL">
+									</div>
+								</td>
+							</tr>
+						</form></table><br>
+					<table width="70%" border="0" cellspacing="2" cellpadding="0">
+						<tr>
+							<td width="50%"><a href="delete_useraccount.pl?username=$username&sessid=$sessid&confirm=0">Delete Account</a></td>
+							<td width="50%">
+								<div align="right">
+									<a href="accumulate_credits.pl?username=$username&sessid=$sessid">$acc_text</a></div>
+							</td>
+						</tr>
+					</table>
+					<p></p>
+				</td>
+			</tr>
+		</table>
+		<!-- End ImageReady Slices -->
+</BODY>
+</HTML>
