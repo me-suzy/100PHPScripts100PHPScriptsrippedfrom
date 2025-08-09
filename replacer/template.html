@@ -1,0 +1,59 @@
+<title>Replacer</title>
+<body bgcolor="#FFFFFF">
+<font face="Verdana, Arial" size="2">%message%</font> 
+<form action="%PHP_SELF%" method="POST">
+<table width="70%" border="0" cellspacing="0" cellpadding="1" bgcolor="#CCCCCC">
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr> 
+<td colspan="2"> 
+<center>
+<b><font face="Verdana, Arial" size="3">Replacer </font></b> 
+</center>
+</td>
+</tr>
+<tr> 
+<td bgcolor="#f0f0f0" width="40%"><font face="Verdana, Arial" size="2"><b>Starting 
+Directory:</b></font></td>
+<td bgcolor="#f0f0f0"> <font face="Verdana, Arial" size="2"> 
+<input type="text" name="directory" size="40">
+</font></td>
+</tr>
+<tr bgcolor="#FFFFFF"> 
+<td><font face="Verdana, Arial" size="2"><b>Locate Word or Phrase:</b></font></td>
+<td><font face="Verdana, Arial" size="2"> 
+<input type="text" name="find" size="40">
+</font></td>
+</tr>
+<tr> 
+<td bgcolor="#f0f0f0"><font face="Verdana, Arial" size="2"><b>Replace With:</b></font></td>
+<td bgcolor="#f0f0f0"><font face="Verdana, Arial" size="2"> 
+<input type="text" name="replace" size="40">
+</font></td>
+</tr>
+<tr bgcolor="#FFFFFF"> 
+<td><font face="Verdana, Arial" size="2"><b>Options:</b></font></td>
+<td><font face="Verdana, Arial" size="2"> 
+<input type="checkbox" name="recurse" value="1" checked>
+Recurse below starting directory<br>
+<input type="checkbox" name="insensitive" value="i">
+Case insensitive matching<br>
+<input type="checkbox" name="verbose" value="1" checked>
+Be verbose<br>
+<input type="checkbox" name="filter" value="1">
+Only files with extension:
+<input type="text" name="extension" size="10" value=".html">
+</font></td>
+</tr>
+<tr bgcolor="#FFFFFF">
+<td>&nbsp;</td>
+<td>
+<input type="submit" name="Submit" value="Do It">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</form>
