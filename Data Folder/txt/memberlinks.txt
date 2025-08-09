@@ -1,0 +1,26 @@
+<table width="90%" cellspacing="3" cellpadding="4">
+<tr>
+  <td><b>Member Links List for ~sitename~</b></td>
+</tr>
+<tr><td><hr size="3" color="~basecolor~"></td></tr>
+<tr>
+  <td><font color="~basecolor~"><b>Recommeded Links:</b></font></p>
+  ~adminlinks~</td>
+</tr>
+<tr><td><hr size="3" color="~basecolor~"></td></tr>
+<tr>
+  <td><font color="~basecolor~"><b>Platinum Members Links:</b></font></p>
+  ~platinumlinks~</td>
+</tr>
+<tr><td><hr size="3" color="~basecolor~"></td></tr>
+<tr>
+  <td><font color="~basecolor~"><b>Pro Members Links:</b></font></p>
+  ~prolinks~</td>
+</tr>
+<tr><td><hr size="3" color="~basecolor~"></td></tr>
+<tr>
+  <td><font color="~basecolor~"><b>Free Members Links:</b></font></p>
+  ~freelinks~</td>
+</tr>
+<tr><td><hr size="3" color="~basecolor~"></td></tr>
+</table>
