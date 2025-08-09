@@ -1,0 +1,57 @@
+iAffiliate (Rev. E) - Released May 30th, 2003:
+===============================================
+
+1) public_html/cgi-bin/signup.cgi		- UPDATED
+Upload this file above over the original one in your server
+to apply the upgrade to this file on your server.
+
+2) bugfix.cgi					- CREATED
+Upload this file into your Administrative folder, then CHMOD
+it to 755 and run thru your web browser to fix the MySQL DB
+in order to fix the commission accounting bug.
+
+Once you have ran the file, just delete it from your server
+as you will only need this file to run once.
+
+
+iAffiliate (Rev. F) - Released July 2nd, 2003:
+==============================================
+
+1) data/iSubs.pm				- UPDATED
+Upload this file above over the original one in your server
+to apply the upgrade to this file on your server.
+
+2) public_html/cgi-bin/banners.cgi		- UPDATED
+Upload this file above over the original one in your server
+to apply the upgrade to this file on your server.
+
+3) public_html/cgi-bin/in.cgi			- UPDATED
+Upload this file above over the original one in your server
+to apply the upgrade to this file on your server.
+
+4) public_html/cgi-bin/profile.cgi		- UPDATED
+Upload this file above over the original one in your server
+to apply the upgrade to this file on your server.
+
+5) public_html/cgi-bin/signup.cgi		- UPDATED
+Upload this file above over the original one in your server
+to apply the upgrade to this file on your server.
+
+6) public_html/cgi-bin/verify.cgi		- UPDATED
+Upload this file above over the original one in your server
+to apply the upgrade to this file on your server.
+
+7) public_html/cgi-bin/admin/search.cgi		- UPDATED
+Upload this file above over the original one in your server
+to apply the upgrade to this file on your server.
+
+8) public_html/cgi-bin/admin/settings.cgi	- UPDATED
+Upload this file above over the original one in your server
+to apply the upgrade to this file on your server.
+
+9) public_html/cgi-bin/admin/update_mysql.cgi	- CREATED
+Upload this file into your Administrative folder, then CHMOD
+it to 755 and run thru your web browser to update MySQL DB.
+
+Once you have ran the file, just delete it from your server
+as you will only need this file to run once.
