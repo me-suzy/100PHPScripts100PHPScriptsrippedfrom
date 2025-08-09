@@ -563,7 +563,8 @@ EndHTML;
 \$CONFIG['top'] = ${FORM['top']};
 \$CONFIG['adbreaks'] = array($newadbreaks);
 
-\$CONFIG['active_default'] = ${FORM['active_default']};
+\$CONFIG['active_default'] = ${FORM['active_default']};
+
 \$CONFIG['delete_after'] = ${FORM['delete_after']};
 \$CONFIG['email_admin_on_join'] = ${FORM['email_admin_on_join']};
 \$CONFIG['max_banner_width'] = ${FORM['max_banner_width']};
