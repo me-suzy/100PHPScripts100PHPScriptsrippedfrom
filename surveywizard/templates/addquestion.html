@@ -1,0 +1,179 @@
+<html>
+<head>
+<title>SurveyWizard</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<h2><font face="Verdana, Arial">SurveyWizard - Add Question</font></h2>
+<form name="form1" method="post" action="%phpself%">
+<center>
+<table width="100%" border="0" cellspacing="0" cellpadding="1">
+<tr> 
+<td width="25%"><font face="Verdana, Arial" size="2"><b>Question settings</b></font></td>
+<td width="2%"><font face="Verdana, Arial" size="2"></font></td>
+<td><font face="Verdana, Arial" size="2">Specify the question and determine how 
+answers should be displayed/collected</font></td>
+</tr>
+<tr> 
+<td width="25%">&nbsp;</td>
+<td width="2%">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr> 
+<td width="25%"><font face="Verdana, Arial" size="2">Enter the text of the question:</font></td>
+<td width="2%"><font face="Verdana, Arial" size="2"></font></td>
+<td> <font face="Verdana, Arial" size="2"> 
+<textarea name="question" rows="5" cols="50"></textarea>
+</font></td>
+</tr>
+<tr> 
+<td width="25%"><font face="Verdana, Arial" size="2"></font></td>
+<td width="2%"><font face="Verdana, Arial" size="2"></font></td>
+<td><font face="Verdana, Arial" size="2"></font></td>
+</tr>
+<tr> 
+<td><font face="Verdana, Arial" size="2">How should answers be presented?</font></td>
+<td><font face="Verdana, Arial" size="2"></font></td>
+<td> <font face="Verdana, Arial" size="2"> 
+<select name="answermethod">
+<option value="list">Select List (Visitor can choose 1 answer)</option>
+<option value="check">Check Boxes (Visitor can choose none, any, or all answers)</option>
+<option value="radio">Radio Buttons (Visitor can choose 1 answer)</option>
+<option value="text">Text Entry (Visitor types their own answer)</option>
+</select>
+</font></td>
+</tr>
+<tr> 
+<td colspan="3"><font face="Verdana, Arial" size="2"></font><font face="Verdana, Arial" size="2"></font> 
+<font face="Verdana, Arial" size="2"></font></td>
+</tr>
+<tr> 
+<td colspan="3">&nbsp;</td>
+</tr>
+<tr> 
+<td><font face="Verdana, Arial" size="2"><b>Predefined answers</b></font></td>
+<td><font face="Verdana, Arial" size="2"></font></td>
+<td> 
+<p><font face="Verdana, Arial" size="2">If answers to this question will be presented 
+as a select list, check boxes, or radio buttons, fill in up to 10 possible answers 
+below. These are the answers that visitors will be able to choose from when answering 
+this question.</font></p>
+<p><font face="Verdana, Arial" size="2">If you chose &quot;Text Entry&quot; as 
+the presentation method, <i>leave the rest of the fields on this form blank</i>.</font></p>
+</td>
+</tr>
+<tr> 
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr> 
+<td><font face="Verdana, Arial" size="2">Answer #1</font></td>
+<td><font face="Verdana, Arial" size="2"></font></td>
+<td> <font face="Verdana, Arial" size="2"> 
+<input type="text" name="answers[]" size="60">
+</font></td>
+</tr>
+<tr> 
+<td><font face="Verdana, Arial" size="2">Answer #2</font></td>
+<td><font face="Verdana, Arial" size="2"></font></td>
+<td> <font face="Verdana, Arial" size="2"> 
+<input type="text" name="answers[]" size="60">
+</font></td>
+</tr>
+<tr> 
+<td><font face="Verdana, Arial" size="2">Answer #3</font></td>
+<td><font face="Verdana, Arial" size="2"></font></td>
+<td> <font face="Verdana, Arial" size="2"> 
+<input type="text" name="answers[]" size="60">
+</font></td>
+</tr>
+<tr> 
+<td><font face="Verdana, Arial" size="2">Answer #4</font></td>
+<td><font face="Verdana, Arial" size="2"></font></td>
+<td> <font face="Verdana, Arial" size="2"> 
+<input type="text" name="answers[]" size="60">
+</font></td>
+</tr>
+<tr> 
+<td><font face="Verdana, Arial" size="2">Answer #5</font></td>
+<td><font face="Verdana, Arial" size="2"></font></td>
+<td> <font face="Verdana, Arial" size="2"> 
+<input type="text" name="answers[]" size="60">
+</font></td>
+</tr>
+<tr> 
+<td><font face="Verdana, Arial" size="2">Answer #6</font></td>
+<td><font face="Verdana, Arial" size="2"></font></td>
+<td> <font face="Verdana, Arial" size="2"> 
+<input type="text" name="answers[]" size="60">
+</font></td>
+</tr>
+<tr> 
+<td><font face="Verdana, Arial" size="2">Answer #7</font></td>
+<td><font face="Verdana, Arial" size="2"></font></td>
+<td> <font face="Verdana, Arial" size="2"> 
+<input type="text" name="answers[]" size="60">
+</font></td>
+</tr>
+<tr> 
+<td><font face="Verdana, Arial" size="2">Answer #8</font></td>
+<td><font face="Verdana, Arial" size="2"></font></td>
+<td> <font face="Verdana, Arial" size="2"> 
+<input type="text" name="answers[]" size="60">
+</font></td>
+</tr>
+<tr> 
+<td><font face="Verdana, Arial" size="2">Answer #9</font></td>
+<td><font face="Verdana, Arial" size="2"></font></td>
+<td> <font face="Verdana, Arial" size="2"> 
+<input type="text" name="answers[]" size="60">
+</font></td>
+</tr>
+<tr> 
+<td><font face="Verdana, Arial" size="2">Answer #10</font></td>
+<td><font face="Verdana, Arial" size="2"></font></td>
+<td> <font face="Verdana, Arial" size="2"> 
+<input type="text" name="answers[]" size="60">
+</font></td>
+</tr>
+<tr> 
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr> 
+<td colspan="3"><font face="Verdana, Arial" size="2">Now you must save this question 
+to the database. If you want to add another question to this survey, click &quot;Save 
+and Add Another Question.&quot; If this is the last question in the survey, click 
+&quot;Save and Finalize Survey.&quot;</font></td>
+</tr>
+<tr> 
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr> 
+<td colspan="3"> 
+<center>
+<p> 
+<input type="submit" name="Submit" value="Save and Add Another Question">
+</p>
+<p> 
+<input type="hidden" name="survey" value="%survey%">
+<input type="submit" name="Submit" value="Save and Finalize Survey">
+</p>
+</center>
+</td>
+</tr>
+<tr> 
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</center>
+</form>
+</body>
+</html>
