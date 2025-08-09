@@ -1,0 +1,66 @@
+#########################################################
+#                     MP3Stream                         #
+#########################################################
+#                                                       #
+# This script was created by:                           #
+#                                                       #
+# PHPSelect Web Development Division.                   #
+# http://www.phpselect.com/                             #
+#                                                       #
+# This script and all included modules, lists or        #
+# images, documentation are copyright 2002              #
+# PHPSelect (http://www.phpselect.com/) unless          #
+# otherwise stated in the script.                       #
+#                                                       #
+# Purchasers are granted rights to use this script      #
+# on any site they own. There is no individual site     #
+# license needed per site.                              #
+#                                                       #
+# Any copying, distribution, modification with          #
+# intent to distribute as new code will result          #
+# in immediate loss of your rights to use this          #
+# program as well as possible legal action.             #
+#                                                       #
+# This and many other fine scripts are available at     #
+# the above website or by emailing the authors at       #
+# admin@phpselect.com or info@phpselect.com             #
+#                                                       #
+#########################################################
+
+[OVERVIEW]
+
+Streaming Jukebox allows your websites visitors to select a playlist of mp3's on 
+your site and then streams the selections they made in order to their winamp or 
+windows media player. This script is fully automatic and allows you to set it to 
+look just like the rest of your website by use of external html templates. It is 
+simple to setup and an enjoyment for your users, which means it will keep them 
+coming back to your website over and over again.
+
+[FEATURES]
+
+Easy to setup and use.
+External html templates for full customization of design.
+Needs no external modules or programs.
+
+[DOCUMENTATION]
+
+First, open streamer.php and edit the variables at the top of the script. 
+Upload the "streamer" directory to your server in ASCII mode. Set the
+permissions on the "lists" directory to 777.
+
+Aim your web browser at streamer.php. If you followed the above steps correctly 
+you should see a form listing all of the mp3 files in you collection folder.
+
+Now that it is working correctly, you can edit templates/streamer.html to look 
+however you wish, just make sure you leave the %output% token in it.
+
+You can ask your admin to setup a crontab to periodically clean out your "lists"
+directory automatically.
+
+
+[ASSISTANCE]
+
+For assistance with this program visit http://phpselect.com or send an 
+email to support@phpselect.com
+
+
