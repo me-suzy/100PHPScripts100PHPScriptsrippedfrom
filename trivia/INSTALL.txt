@@ -1,0 +1,97 @@
+#########################################################
+#                  AdvancedTrivia                       #
+#########################################################
+#                                                       #
+#                                                       #
+# This script was created by:                           #
+#                                                       #
+# PHPSelect Web Development Division.                   #
+# http://www.phpselect.com/                             #
+#                                                       #
+# This script and all included modules, lists or        #
+# images, documentation are copyright 2002              #
+# PHPSelect (http://www.phpselect.com/) unless          #
+# otherwise stated in the script.                       #
+#                                                       #
+# Purchasers are granted rights to use this script      #
+# on any site they own. There is no individual site     #
+# license needed per site.                              #
+#                                                       #
+# Any copying, distribution, modification with          #
+# intent to distribute as new code will result          #
+# in immediate loss of your rights to use this          #
+# program as well as possible legal action.             #
+#                                                       #
+# This and many other fine scripts are available at     #
+# the above website or by emailing the authors at       #
+# admin@phpselect.com or info@phpselect.com             #
+#                                                       #
+#########################################################
+
+[Overview]
+
+Trivia is an advanced trivia script and highly 
+customizable. We went one step further and worked a 
+little bit harder to make this script one step better. 
+It generates a random question and of course lists 
+choices - but it lists them in random placement so the 
+user can't just pick the right one every single time. 
+It uses a flatfile DB which is very easy to edit. 
+Exploitation of the ability to use templates has occurred 
+to bring to you a script that will fit your site better 
+than any other. 
+
+#########################################################
+
+[Features]
+
++100% Template driven. 
++Flatfile DB for easy editing/updating. 
++You specify the questions, choices, and answers!
++Random question order. 
++Random choices placement. 
+
+#########################################################
+
+Installation instructions for AdvancedTrivia
+
+Inside the zip you should find the following files :
+
+	INSTALL.txt      - Installation instructions
+	trivia.php       - the main PHP script
+	triviadb.txt 	 - question/choice/answer DB
+	template1.html   - example template HTML file
+	template2.html   - example template HTML file
+
+Unzip the file and edit the templates to suit your needs,
+if you're planning on using the existing templates. Be
+sure to place the tokens %%RESULT%%, %%QUESTION%%,
+%%CHOICES%%, and %%FORM%% where you want those elements
+to appear on your page. Edit the triviadb.txt file and
+specify the questions, choices, and answers for your
+trivia questions. The format for entries in triviadb.txt
+is explained within that file.
+
+Upload the script and template HTML files to your web 
+server in ASCII mode. Point your web browser to the
+trivia.php script to have fun playing.
+
+#########################################################
+
+[Usage]
+
+To use this script, edit one of the included templates
+or integrate the special output tokens (%%RESULT%%, 
+%%QUESTION%%, %%CHOICES%%, %%FORM%%) into one of your
+existing pages and adjust the $template variable inside
+trivia.php accordingly.
+
+#########################################################
+
+[Support]
+
+You can reach technical support at support@phpselect.com.
+You can also visit us at http://www.phpselect.com/ for more
+information regarding this and other scripts.
+
+Thanks!
