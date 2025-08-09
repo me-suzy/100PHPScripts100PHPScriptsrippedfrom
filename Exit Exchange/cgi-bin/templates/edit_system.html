@@ -1,0 +1,157 @@
+<HTML>
+<HEAD>
+<TITLE>McDev Exit Exchange</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+		<link href="../../05.css" rel="stylesheet" media="screen">
+	</HEAD>
+<BODY BGCOLOR=#6e6e6e LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
+		<!-- ImageReady Slices (navigation.psd) -->
+		<table width="95%" border="0" cellspacing="2" cellpadding="0" align="center">
+			<tr>
+				<td width="207">
+					<TABLE WIDTH=207 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+						<TR>
+							<TD COLSPAN=3><IMG SRC="../../images/index_01.jpg" WIDTH=207 HEIGHT=166 ALT=""></TD>
+						</TR>
+						<TR>
+							<TD ROWSPAN=6><IMG SRC="../../images/index_02.jpg" WIDTH=13 HEIGHT=402 ALT=""></TD>
+							<TD><a href="get_site.pl?id=home&ref=$ref"><IMG SRC="../../images/index_03.jpg" WIDTH=177 HEIGHT=43 ALT="" border="0"></a></TD>
+							<TD ROWSPAN=6><IMG SRC="../../images/index_04.jpg" WIDTH=17 HEIGHT=402 ALT=""></TD>
+						</TR>
+						<TR>
+							<TD><a href="get_site.pl?id=register&ref=$ref"><IMG SRC="../../images/index_05.jpg" WIDTH=177 HEIGHT=44 ALT="" border="0"></a></TD>
+						</TR>
+						<TR>
+							<TD><a href="get_site.pl?id=login&ref=$ref"><IMG SRC="../../images/index_06.jpg" WIDTH=177 HEIGHT=44 ALT="" border="0"></a></TD>
+						</TR>
+						<TR>
+							<TD><a href="get_site.pl?id=faq&ref=$ref"><IMG SRC="../../images/index_07.jpg" WIDTH=177 HEIGHT=44 ALT="" border="0"></a></TD>
+						</TR>
+						<TR>
+							<TD><a href="get_site.pl?id=contact&ref=$ref"><IMG SRC="../../images/index_08.jpg" WIDTH=177 HEIGHT=43 ALT="" border="0"></a></TD>
+						</TR>
+						<TR>
+							<TD><IMG SRC="../../images/index_09.jpg" WIDTH=177 HEIGHT=184 ALT=""></TD>
+						</TR>
+					</TABLE>
+				</td>
+				<td align="center" valign="top">
+					<p><font size="+3" color="#e6e6e6" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><br>McDev Exit Exchange</b></font></p>
+					<p></p>
+					<p><font size="+1" color="#e6e6e6" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><br>
+							Here you can change the settings of the system:</font></p>
+					<table width="95%" border="0" cellspacing="2" cellpadding="0"><form action="apply_systemchanges.pl?sessid=$sessid" method=post>
+						<tr>
+							<td>
+								<div align="right">Time after a user needs to re-login[in sec.]:</div>
+							</td>
+							<td><input name=logintime type="text" value="$logintime" size="5"></td>
+						</tr>
+						<tr>
+							<td>
+								<div align="right">
+									Old password:</div>
+							</td>
+							<td><input type=password name=old_password size=20 maxlength=20></td>
+						</tr>
+						<tr>
+							<td>
+									<div align="right">
+										New password (leave blank to keep old pw):</div>
+								</td>
+							<td><input type=password name=new_password1 size=20 maxlength=20></td>
+						</tr>
+						<tr>
+							<td>
+									<div align="right">
+										Repeat new password:</div>
+								</td>
+							<td><input type=password name=new_password2 size=20 maxlength=20></td>
+						</tr>
+<tr>
+<td><div align="right">
+CGI-address (like http://www.test.com/cgi-bin/):
+</div>
+</td>
+<td>
+<input type="text" name=cgi_address value="$cgi_address" size=30>
+</td>
+</tr>
+							<tr>
+								<td>
+									<div align="right">
+										Standard URL&nbsp;(that appears if nobody has enough cred.):</div>
+								</td>
+								<td><input type=text name=standard_url size=30 value="$standard_url"></td>
+							</tr>
+							<tr>
+							<td>
+									<div align="right">
+										Mails from&nbsp;(address that the signup-confirmation contains):</div>
+								</td>
+							<td><input type=text name=mail_from value="$mail_from" size=30 maxlength=60></td>
+						</tr>
+						<tr>
+							<td>
+									<div align="right">
+										Mail subject:</div>
+								</td>
+							<td><input type=text name=mail_subject value="$mail_subject" size=30></td>
+						</tr>
+						<tr>
+							<td>
+									<div align="right">
+										Mailbody:</div>
+								</td>
+							<td><textarea name="mailbody" rows="6" cols="40">$mailbody
+</textarea></td>
+						</tr>
+						<tr>
+							<td>
+									<div align="right">
+										Credits you get for a popup:</div>
+								</td>
+							<td><input type=text name=get_credits value="$get_credits" size=5></td>
+						</tr>
+						<tr>
+							<td>
+									<div align="right">
+										Credits you pay for a popup:</div>
+								</td>
+							<td><input type=text name=cost_credits value="$cost_credits" size=5></td>
+						</tr>
+						<tr>
+							<td>
+									<div align="right">
+										Maximum URLs per user:</div>
+								</td>
+							<td><input type=text name=max_urls value="$max_urls" size=5></td>
+						</tr>
+							<tr>
+								<td>
+									<div align="right">
+										Reload time (after the same IP is rewarded again[in sec.]):</div>
+								</td>
+								<td><input type=text name=reload_time size=6 value="$reload_time"></td>
+							</tr>
+							<tr>
+							<td>
+									<div align="right">Ref credits (seperated by '&amp;', like 15&10&5&3):</div>
+								</td>
+							<td><input type=text name=ref_ratios value="$ref_ratios" size=20></td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<div align="center">
+									<input type=submit value="Apply changes">
+								</div>
+							</td>
+						</tr></form>
+					</table>
+					<p><a href="admin_account.pl?sessid=$sessid">Back to account</a></p>
+				</td>
+			</tr></form>
+		</table>
+		<!-- End ImageReady Slices -->
+</BODY>
+</HTML>
