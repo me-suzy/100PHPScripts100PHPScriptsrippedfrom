@@ -1,7 +1,7 @@
 <?php
 
 /* D.E. Classifieds v1.04
-   Copyright  2002 Frank E. Fitzgerald 
+   Copyright © 2002 Frank E. Fitzgerald 
    Distributed under the GNU GPL .
    See the file named "LICENSE".  */
 
