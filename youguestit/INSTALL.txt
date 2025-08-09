@@ -1,0 +1,44 @@
+#########################################################
+#                      YouGuestIt                       #
+#########################################################
+# This script was created by:                           #
+#                                                       #
+# PHPSelect Web Development Division.                     #
+# http://www.phpselect.com/                               #
+#                                                       #
+# This script and all included modules, lists or        #
+# images, documentation are copyright 2002              #
+# PHPSelect (http://www.phpselect.com/) unless              #
+# otherwise stated in the script.                       #
+#                                                       #
+# Purchasers are granted rights to use this script      #
+# on any site they own. There is no individual site     #
+# license needed per site.                              #
+#                                                       #
+# Any copying, distribution, modification with          #
+# intent to distribute as new code will result          #
+# in immediate loss of your rights to use this          #
+# program as well as possible legal action.             #
+#                                                       #
+# This and many other fine scripts are available at     #
+# the above website or by emailing the authors at       #
+# admin@phpselect.com or info@phpselect.com                 #
+#########################################################
+
+To install YouGuestIt, first set the config variables
+as defined in the guest.php script. Then upload both the
+script and the empty "msgs.data" file to your server. You
+will need to chmod 777 msgs.data so that PHP can write to 
+it.
+
+Access the script in your browser and you're ready to go!
+
+#########################################################
+
+[Support]
+
+You can reach technical support at Support@PHPSelect.com.
+You can also visit us at http://www.phpselect.com/ for more
+information regarding this and other scripts.
+
+Thanks!
