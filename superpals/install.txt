@@ -1,0 +1,55 @@
+#########################################################
+#                     SuperPals                         #
+#########################################################
+#                                                       #
+#                                                       #
+# This script was created by:                           #
+#                                                       #
+# PHPSelect Web Development Division.                   #
+# http://www.phpselect.com/                             #
+#                                                       #
+# This script and all included modules, lists or        #
+# images, documentation are copyright 2002              #
+# PHPSelect (http://www.phpselect.com/) unless          #
+# otherwise stated in the script.                       #
+#                                                       #
+# Purchasers are granted rights to use this script      #
+# on any site they own. There is no individual site     #
+# license needed per site.                              #
+#                                                       #
+# Any copying, distribution, modification with          #
+# intent to distribute as new code will result          #
+# in immediate loss of your rights to use this          #
+# program as well as possible legal action.             #
+#                                                       #
+# This and many other fine scripts are available at     #
+# the above website or by emailing the authors at       #
+# admin@phpselect.com or info@phpselect.com             #
+#                                                       #
+#########################################################
+
+
+Installation:
+-----------------------------------------------
+
+installation of this script is as easy as can be.
+
+Step 1. Open configs.php in a text editor and change the variables to match your site. 
+        Save file as text when done.
+        
+Step 2. Upload all files/directories to a directory in a CGI executable area on your 
+        webserver in ASCII mode.
+        
+Step 3. Change file permissions as shown below:
+
+                  Directory containing script:  777
+                  pals.php:                     755
+                  Configs.php                   755
+                  
+That's it for installation. You can now open pals.php in your browser and you will see 
+the signup form. To display a list of all entries open: pals.php?action=view   to use 
+the admin functions:  pals.php?action=admin
+
+You now have the ability to edit all the files in the "templates" directory to match your site 
+and design layout. 
+
