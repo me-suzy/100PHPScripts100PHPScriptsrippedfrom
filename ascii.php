@@ -37,7 +37,7 @@ $m_t = 10;
 $m_l = 10;
 $depth = 10;
 $timelimit = 600; // Sets the max_execution_time for the running time of this script.
-$htmlencoded = 0; // display the code correctly , for example  is &#193; - default is disabled = 0; To enable change to = 1;
+$htmlencoded = 0; // display the code correctly , for example Á is &#193; - default is disabled = 0; To enable change to = 1;
 
 
 if (isset($_POST['type']))
