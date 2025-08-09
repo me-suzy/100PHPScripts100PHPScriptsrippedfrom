@@ -1,0 +1,72 @@
+BODY {
+	COLOR: black; FONT-FAMILY: arial, helvetica, geneva, sans-serif; FONT-SIZE: 10pt; TEXT-DECORATION: none
+}
+.tdunderline {
+	border-bottom:solid gray 1px;
+	}
+.supermenu {
+	border-bottom:solid black 1px;
+	border-right:solid black 1px;
+	border-left:solid gray 1px;
+	border-top:solid gray 1px;
+	font-size: 12px;
+	}
+.signupTable {
+	border:solid gray 1px;
+	font-size: 12px;
+	}
+.supermenuNoshadow {
+	border:solid gray 1px;
+	font-size: 12px;
+	}
+.smalltext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	font-variant: small-caps;
+	color: #000000;
+	text-decoration: underline;
+	background-color: #FFFFFF;
+
+}
+.menuheader {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	background-color: #666666;
+	color: #CCCCCC;
+}
+.menuheaderAction {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #000000;
+	background-color: #CCCCCC;
+}
+.smallstatsText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #666666;
+	border-bottom:solid gray 1px;
+}
+.menuheaderCopy {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	background-color: #666666;
+	color: #FFFFFF;
+}
+.font {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+.yell {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+}
