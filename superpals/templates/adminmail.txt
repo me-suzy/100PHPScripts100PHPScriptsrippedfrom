@@ -1,0 +1,31 @@
+A new person has joined the penpals listings.
+
+Below is the info submitted.
+
+
+Your Name: %name%
+Your Email: %email%
+Homepage URL: %url%
+Gender: %sex%
+Your Age: %age%
+Looking for: %pref%
+Your City: %city%
+Your State: %state%
+Country: %country%
+Currently: %situation%
+Ethnicity: %race%
+Religion: %religion%
+Height: %height%
+Weight: %weight%
+Hair Color: %hair%
+Eye Color: %eyes%
+Formal Education completed: %education%
+Occupation: %work%
+Your Hobbies: %hobbies%
+Perfect Match's age: %matchage%
+Details about you: %desc%
+
+
+
+
+%ip_address%
