@@ -1,0 +1,34 @@
+
+
+Comments: Yigle's Exit Exchange  v.1.1 
+
+1.) All scripts have been written perl
+2.) All pages having ' .cgi ' as an extension should be chmod to 755.
+3.) In order to get things running, you should have full cgi rights as well as Mysql database
+4.) Buying this script give you the right to use it. It's forbidden to sell or give it away without permission of the legal owner of this script.
+-------------------------------------------------------------------------------------------
+The templates are in the
+directory cgi-bin/templates where you can adept or replace them.
+ 
+ Included are always variables in the format $variable_name. These are
+ placeholders which you can include in future templates to show dynamic
+ information. Because there is a lot of different situations, there are
+ pretty many templates.
+ 
+ The main module is called Mcexitexchange.pm. Here you need to set the
+ correct path to sendmail and your MySQL database. In the admin area you have
+ to set the correct path of your cgi-bin.
+ 
+ To create the MySQL tables just run the script cgi-bin/create_database.pl as
+ far as you have set the correct path to your MySQL database. After that you
+ should delete the file so that nobody else can run it.
+
+We tested the program as described above and it fully works. If this program isn't working cause of none cgi rights or whatsoever, executing the program in the wrong way or lack of knowledge and understanding scripts, we do not refund the paid money.
+This to avoid clients copying our program and then ask for a refund. 
+
+
+Copyright 2002 Yigle.com
+All rights reserved.
+
+
+
