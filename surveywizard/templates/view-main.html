@@ -1,0 +1,14 @@
+<title>Survey Wizard</title> 
+<h2><font face="Verdana, Arial">Survey Wizard - Take a Survey</font></h2>
+<p><font face="Verdana, Arial" size="2"><b>Viewing Survey</b>: %surveyname%</font></p>
+<p><font face="Verdana, Arial" size="2">This survey contains %numquestions% questions. 
+Please specify an answer for each one.</font></p>
+<form name="form1" method="post" action="%phpself%">
+<p><font face="Verdana, Arial" size="2">%questions%</font> </p>
+<p align="center"> %qids% 
+<input type="hidden" name="sid" value="%sid%">
+<input type="hidden" name="action" value="COMPLETED">
+<input type="submit" name="Submit" value="Submit Answers">
+</p>
+</form>
+<p>&nbsp;</p>
