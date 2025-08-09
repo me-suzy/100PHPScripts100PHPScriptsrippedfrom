@@ -14,7 +14,7 @@ echo "</tr>\n";
 echo "<tr>\n";
 echo "<td>\n";
 # Ah, so you're in here because you want to change the copyright
-# message to " 2001 Your Name/Company"? I urge you to think twice
+# message to "© 2001 Your Name/Company"? I urge you to think twice
 # before doing so. First of all, it's a clear violation of the GNU
 # General Public License as well as the copyright laws in most
 # countries. Secondly, did you even stop to consider that you're
