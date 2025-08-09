@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Safe List Login</title>
+</head>
+<body>
+<center>
+<p align="center"><font size="5" color="#ff0000">Safelist Signup Form</font></p>
+<p align="center">Fill out the form below to create your New Safe-list account</p>
+<div align="center">
+<table border="0" width="80%">
+<tr>
+<td>
+<FORM ACTION="/cgi-bin/slist.cgi" METHOD=POST>
+<center>
+<font face="Verdana,Arial,Helvetica,sans-serif" size="1">
+<p><b><font color="#ff0000">Your Name</b></font> - Your name or company name<br>
+<input type="text" size="40" name="name">
+<p><b><font color="#ff0000">Contact Email</b></font> - Please use a valid email address<br>
+<input type="text" size="40" maxlength="40" name="email">
+<p><b><font color="#ff0000">Subscribe Email</b></font> - Use a valid address to subscribe<br>
+<input type="text" size="40" maxlength="40" name="sub">
+<p><b><font color="#ff0000">Username</b></font> - One Word, No Spaces, Letters/Numbers only<br>
+<input type="text" size="40" name="user">
+<p><b><font color="#ff0000">Password</b></font> - Required to login to the members section<br>
+<input type="text" size="40" name="pass">
+<p>You will be able to edit your information at any time!</p>
+<p>Please press the "create safe-list" button below only one time!<br>
+<input type="submit" value="Create My Safe-List Account"> <input type="reset" value="Reset Form">
+</center>
+<input type="hidden" name="dtype" value="FREE">
+</FORM>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
