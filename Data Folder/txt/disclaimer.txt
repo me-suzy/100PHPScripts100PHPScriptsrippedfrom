@@ -1,0 +1,22 @@
+This is not SPAM.  You agreed to receive ad messages from the list members
+
+when you joined the ~sitename~.
+
+To be removed - You have to login and delete your safelist account.
+
+This is the only way to be removed!  The login page can be found at:
+
+
+
+~loginurl~
+
+<a href="~loginurl~">AOL Users Click Here</a>
+
+
+
+--- Ad Message Identification:
+
+Message Sent By: ~sentbyid~
+
+Message Sent On: ~timestamp~
+
