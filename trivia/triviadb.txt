@@ -1,0 +1,27 @@
+#This is the trivia database file. It contains the questions, choices, and
+#answers used by the trivia engine. The format of the file is as follows:
+#
+#question|choice1~choice2~choiceN|correct answer
+#
+#Pipes separate the elements, tildes separate individual choices. For example,
+#
+#The color of an apple is:|Red~Green~Blue~Apples are colorless|Red
+#
+#This would display the question "The color of an apple is:" with four choices,
+#"Red," "Green," Blue," and "Apples are colorless." Place one entry per line,
+#note that your questions/choices/answers cannot contain either the pipe symbol
+#or a tilde. Blank lines and comments (lines beginning with #) are ignored.
+
+How many kilobytes are in a megabyte?|1000~1024~4096~5280|1024
+
+What did PHP originally stand for?|Personal Homepage Tools~PHPSelect Hacked the Pentagon~Programmers Hate Perl|Personal Homepage Tools
+
+What is the airspeed velocity of an unladen swallow?|29 km/h~400 knots~What do you mean? An African or European swallow?|What do you mean? An African or European swallow?
+
+The color of an apple is:|Red~Green~Blue~Apples are colorless|Red
+What's the meaning of life?|42~Who knows?~Money|42
+The "C" in "CMYK" stands for:|Color~Cyan~Crispness~Clear Channel Communications|Cyan
+The "R" in "Perl" stands for:|Regular expression~Reporting~Redundant~Recursive|Reporting
+#here's a comment which will be ignored
+Which command is used to set a file's immutable bit in linux?|chmod~chattr~chim~touch|chattr
+Determine which word is not spelled properly:|reciept~believe~harassment~onomatopoeia|reciept
