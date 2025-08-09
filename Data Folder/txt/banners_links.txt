@@ -1,0 +1,24 @@
+<!-- Text Links Start -->
+
+<p><font color="#000080"><b><i>Text Links</i></b></font></p>
+
+<p>Plain Url Link:<br><font color="blue">~referrallink~</font></p>
+
+<p>Text Link for Webpages #1:<br>(<a href="~referrallink~" target="_blank">Click to Visit ~sitename~</a>)</p>
+
+<p><textarea cols="60" rows="3" class="form-text"><a href="~referrallink~" target="_blank">Click to Visit ~sitename~</a></textarea></p>
+
+<!-- Text Links End -->
+
+
+
+<!-- Banners Start -->
+
+<p><font color="#000080"><b><i>Banners</i></b></font></p>
+
+<p>Banner #1:<br><a href="~referrallink~" target="_blank"><img src="http://ww3.iphatscripts.com/demo_banner.jpg" border="2" style="border-color: #000080"><br><font size="1">Click here to visit ~sitename~</font></a></p>
+
+<p><textarea cols="70" rows="4" class="form-text"><a href="~referrallink~" target="_blank"><img src="http://ww3.iphatscripts.com/demo_banner.jpg" border="2" style="border-color: #000080"><br><font size="1">Click here to visit ~sitename~</font></a></textarea></p>
+
+<!-- Banners End -->
+
